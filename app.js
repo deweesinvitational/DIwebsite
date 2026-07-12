@@ -36,6 +36,18 @@ const data = window.DEWEES_DATA;
 $$('[data-field="eventDate"]').forEach(el => el.textContent = data.event.date);
 $$('[data-field="eventLocation"]').forEach(el => el.textContent = data.event.location);
 
+
+const championsBody = $('#champions-table-body');
+if (championsBody && data.champions) {
+  championsBody.innerHTML = data.champions.map(row => `
+    <tr class="${row.di === '—' ? 'no-event-row' : ''}">
+      <td>${row.di}</td>
+      <td>${row.year}</td>
+      <td>${row.winner}</td>
+    </tr>
+  `).join('');
+}
+
 const rail = $('#year-rail');
 data.years.forEach((y, i) => {
   const b = document.createElement('button');

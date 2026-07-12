@@ -157,15 +157,15 @@
       <div class="champion-cards">
         <article class="champ-card reveal">
           <img src="assets/winner-12.jpg" alt="Champion presentation">
-          <div><span>12th Annual</span><h3>Champion</h3><p>Name to be verified</p></div>
+          <div><span>12th Annual · 2017</span><h3>Kerry DeWees</h3><p>Three-time champion</p></div>
         </article>
         <article class="champ-card featured reveal">
           <img src="assets/winner-16.jpg" alt="16th Annual champion presentation">
-          <div><span>16th Annual</span><h3>Lee D.</h3><p>Winner photo in archive</p></div>
+          <div><span>16th Annual · 2023</span><h3>Lee D.</h3><p>Champion</p></div>
         </article>
         <article class="champ-card reveal">
           <img src="assets/winner-18.jpg" alt="18th Annual champion presentation">
-          <div><span>18th Annual</span><h3>Rob Knarr</h3><p>Winner photo in archive</p></div>
+          <div><span>18th Annual · 2025</span><h3>Rob Knarr</h3><p>Champion</p></div>
         </article>
       </div>
       <button class="button outline-light" data-open="champions-modal">View Hall of Champions</button>
@@ -252,11 +252,17 @@
     <p>The complete schedule, attendees, golf format, poker structure, directions and announcements will live here once confirmed.</p>
   </dialog>
 
-  <dialog id="champions-modal" class="site-modal">
+  <dialog id="champions-modal" class="site-modal champions-dialog">
     <button class="modal-close" aria-label="Close">×</button>
     <span class="eyebrow">Hall of Champions</span>
-    <h2>Verified records in progress</h2>
-    <p>The final list will be populated only from confirmed winner records supplied by KD. Known uploaded photos currently include the 16th Annual winner Lee D. and 18th Annual winner Rob Knarr.</p>
+    <h2>Previous Winners</h2>
+    <p>The official DeWees Invitational winner list. The first two winner records were not kept, and the no-event years are preserved as part of the history.</p>
+    <div class="champions-table-wrap">
+      <table class="champions-table">
+        <thead><tr><th>DI</th><th>Year</th><th>Winner</th></tr></thead>
+        <tbody id="champions-table-body"></tbody>
+      </table>
+    </div>
   </dialog>
 
   <dialog id="year-modal" class="site-modal year-modal">
