@@ -63,12 +63,22 @@ function selectYear(y, button) {
   $$('.year-chip').forEach(x => x.classList.remove('active'));
   button.classList.add('active');
   const img = $('#stage-image');
-  img.style.opacity = 0;
-  setTimeout(() => {
-    img.src = y.image;
-    img.alt = y.title;
-    img.style.opacity = 1;
-  }, 180);
+  const placeholder = $('#stage-placeholder');
+  if (y.image) {
+    placeholder.hidden = true;
+    img.hidden = false;
+    img.style.opacity = 0;
+    setTimeout(() => {
+      img.src = y.image;
+      img.alt = `${y.annual} — ${y.title}`;
+      img.style.opacity = 1;
+    }, 180);
+  } else {
+    img.hidden = true;
+    img.removeAttribute('src');
+    placeholder.hidden = false;
+    placeholder.innerHTML = `<strong>${y.year}</strong><span>No verified photo in the ${y.year} archive</span>`;
+  }
   $('#stage-tag').textContent = y.tag;
   $('#stage-year').textContent = y.annual;
   $('#stage-title').textContent = y.title;
@@ -96,17 +106,28 @@ $$('dialog').forEach(d => d.addEventListener('click', e => {
 }));
 
 $('#open-year').addEventListener('click', () => {
+  const images = selectedYear.media || [];
+  const archiveMedia = images.length ? `
+    <div class="year-archive-grid">
+      ${images.map((src, i) => `<button class="year-archive-image" data-year-src="${src}"><img src="${src}" alt="${selectedYear.year} archive image ${i+1}" loading="lazy"></button>`).join('')}
+    </div>` : `<div class="year-archive-empty"><strong>${selectedYear.year}</strong><span>No verified photographs are currently saved in this year's folder.</span></div>`;
   $('#year-modal-content').innerHTML = `
     <span class="eyebrow">${selectedYear.annual}</span>
     <h2>${selectedYear.title}</h2>
-    <img src="${selectedYear.image}" alt="${selectedYear.title}" style="width:100%;max-height:390px;object-fit:cover;margin:20px 0">
     <p>${selectedYear.description}</p>
     <div class="modal-grid">
       <div><small>Format</small><strong>${selectedYear.format}</strong></div>
       <div><small>Champion</small><strong>${selectedYear.champion}</strong></div>
       <div><small>Archive</small><strong>${selectedYear.archive}</strong></div>
-      <div><small>Status</small><strong>More history to be added</strong></div>
-    </div>`;
+      <div><small>Videos</small><strong>${selectedYear.videoCount ? `${selectedYear.videoCount} saved clip${selectedYear.videoCount === 1 ? '' : 's'} (held for video edit)` : 'None saved for this year'}</strong></div>
+    </div>
+    ${archiveMedia}`;
+  $$('.year-archive-image', $('#year-modal-content')).forEach(btn => btn.addEventListener('click', () => {
+    $('#lightbox img').src = btn.dataset.yearSrc;
+    $('#lightbox img').alt = `${selectedYear.year} archive photo`;
+    document.getElementById('year-modal').close();
+    openDialog('lightbox');
+  }));
   openDialog('year-modal');
 });
 
@@ -124,3 +145,12 @@ galleryItems.forEach(item => item.addEventListener('click', () => {
 }));
 
 $('#copyright-year').textContent = new Date().getFullYear();
+
+const repeatChampions = $('#repeat-champions');
+if (repeatChampions && data.repeatChampions) {
+  repeatChampions.innerHTML = data.repeatChampions.map(c => `<article class="repeat-champion"><b>${c.titles}×</b><strong>${c.name}</strong><small>${c.years}</small></article>`).join('');
+}
+const golfChampions = $('#golf-champions');
+if (golfChampions && data.golfChampions) {
+  golfChampions.innerHTML = data.golfChampions.map(g => `<div class="golf-row"><strong>${g.year}</strong><span>${g.winners}</span></div>`).join('');
+}

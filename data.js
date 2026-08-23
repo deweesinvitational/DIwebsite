@@ -1,7 +1,7 @@
 window.DEWEES_DATA = {
   "event": {
-    "date": "To be announced",
-    "location": "To be announced"
+    "date": "19th Annual \u00b7 2026",
+    "location": "Pennsylvania"
   },
   "years": [
     {
@@ -11,11 +11,14 @@ window.DEWEES_DATA = {
       "year": 2006,
       "title": "Where It Began",
       "tag": "Founding Year",
-      "image": "assets/bracelet.jpg",
-      "description": "The first DeWees Invitational began the annual tradition. The winner record was not kept.",
-      "format": "Poker",
-      "champion": "Record not kept",
-      "archive": "History and photos to be added"
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "The DeWees Invitational began in 2006 as an annual event built around friends and cards. It was always a DeWees Invitational event, but there was not yet a formal poker tournament.",
+      "format": "Cards + Gathering",
+      "champion": "No formal poker champion",
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "2",
@@ -24,24 +27,30 @@ window.DEWEES_DATA = {
       "year": 2007,
       "title": "The Tradition Returns",
       "tag": "Early Years",
-      "image": "assets/poker-2.jpg",
-      "description": "The Invitational returned for a second year. The winner record was not kept.",
-      "format": "Poker",
-      "champion": "Record not kept",
-      "archive": "History and photos to be added"
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "The Invitational returned for its second annual event. Cards remained part of the gathering, but there was still no formal poker tournament.",
+      "format": "Cards + Gathering",
+      "champion": "No formal poker champion",
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "3",
       "label": "3rd",
       "annual": "3rd Annual \u00b7 2008",
       "year": 2008,
-      "title": "Football Joins the Day",
+      "title": "The First Poker Champion",
       "tag": "Football Era",
-      "image": "assets/football-2.jpg",
-      "description": "By the third annual event, football, food and poker had formed the structure that would define many years of the Invitational.",
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "DI III introduced the first formal DeWees Invitational poker tournament. Football, food and poker formed the structure that would define the Invitational for years.",
       "format": "Football + Poker",
-      "champion": "Mike Herman",
-      "archive": "Historical logo and photos to be added"
+      "champion": "Mike Herman \u00b7 First DI poker champion",
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "4",
@@ -50,11 +59,14 @@ window.DEWEES_DATA = {
       "year": 2009,
       "title": "The Annual Rhythm",
       "tag": "Football Era",
-      "image": "assets/football-1.jpg",
+      "image": null,
+      "media": [],
+      "videos": [],
       "description": "The event continued its football-and-poker format as the annual tradition took hold.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "Photos and stories to be added"
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "5",
@@ -63,11 +75,16 @@ window.DEWEES_DATA = {
       "year": 2010,
       "title": "The Bracelet Year",
       "tag": "Milestone",
-      "image": "assets/bracelet.jpg",
-      "description": "A custom championship bracelet and a memorable invitation marked one of the Invitational\u2019s early milestones.",
+      "image": "assets/years/2010/bracelet-year-invite-copy-copy-copy.jpg",
+      "media": [
+        "assets/years/2010/bracelet-year-invite-copy-copy-copy.jpg"
+      ],
+      "videos": [],
+      "description": "A memorable invitation and championship tradition marked one of the Invitational\u2019s early milestones.",
       "format": "Football + Poker",
       "champion": "Rick Stoll",
-      "archive": "Bracelet Year invitation available"
+      "archive": "1 verified image tied to 2010",
+      "videoCount": 0
     },
     {
       "key": "6",
@@ -76,11 +93,16 @@ window.DEWEES_DATA = {
       "year": 2011,
       "title": "The Football Years",
       "tag": "Football Era",
-      "image": "assets/football-1.jpg",
+      "image": "assets/years/2011/2011-logo.png",
+      "media": [
+        "assets/years/2011/2011-logo.png"
+      ],
+      "videos": [],
       "description": "Football by day and poker by night remained the familiar rhythm of the Invitational.",
       "format": "Football + Poker",
       "champion": "Bob DeWees",
-      "archive": "Historical logo and photos to be added"
+      "archive": "1 verified image tied to 2011",
+      "videoCount": 0
     },
     {
       "key": "7",
@@ -89,11 +111,16 @@ window.DEWEES_DATA = {
       "year": 2012,
       "title": "A Growing Tradition",
       "tag": "Football Era",
-      "image": "assets/football-2.jpg",
+      "image": "assets/years/2012/2012-logo.png",
+      "media": [
+        "assets/years/2012/2012-logo.png"
+      ],
+      "videos": [],
       "description": "The group, competition and annual identity continued to grow.",
       "format": "Football + Poker",
       "champion": "Ryan Fischer",
-      "archive": "Historical logo available"
+      "archive": "1 verified image tied to 2012",
+      "videoCount": 0
     },
     {
       "key": "8",
@@ -102,11 +129,16 @@ window.DEWEES_DATA = {
       "year": 2013,
       "title": "The Eighth Invitational",
       "tag": "Football Era",
-      "image": "assets/poker-1.jpg",
+      "image": "assets/years/2013/2013-logo.png",
+      "media": [
+        "assets/years/2013/2013-logo.png"
+      ],
+      "videos": [],
       "description": "Another chapter in the long-running football-and-poker era.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "Photos to be sorted by year"
+      "archive": "1 verified image tied to 2013",
+      "videoCount": 0
     },
     {
       "key": "9",
@@ -115,11 +147,14 @@ window.DEWEES_DATA = {
       "year": 2014,
       "title": "The Ninth Invitational",
       "tag": "Football Era",
-      "image": "assets/chips.jpg",
-      "description": "The annual event continued with its own logos, awards and personality.",
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "The annual event continued its football-and-poker tradition. No verified photo from the 2014 folder is currently in the archive.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "Poker-chip artwork available"
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "10",
@@ -128,11 +163,16 @@ window.DEWEES_DATA = {
       "year": 2015,
       "title": "Ten Years",
       "tag": "Anniversary",
-      "image": "assets/trophy-13.jpg",
-      "description": "The tenth annual event marked a full decade of competition and friendship.",
+      "image": "assets/years/2015/2015-logo.png",
+      "media": [
+        "assets/years/2015/2015-logo.png"
+      ],
+      "videos": [],
+      "description": "The tenth annual event marked a full decade of the DeWees Invitational.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
-      "archive": "Anniversary material to be added"
+      "archive": "1 verified image tied to 2015",
+      "videoCount": 0
     },
     {
       "key": "11",
@@ -141,11 +181,19 @@ window.DEWEES_DATA = {
       "year": 2016,
       "title": "The Football Tradition",
       "tag": "Football Era",
-      "image": "assets/football-1.jpg",
-      "description": "One of the final full years of the long-running football-and-poker format.",
+      "image": "assets/years/2016/11th-annual-shirt-copy-copy-copy.jpg",
+      "media": [
+        "assets/years/2016/11th-di-football-pic-2-copy-copy-copy.jpg",
+        "assets/years/2016/11th-annual-shirt-copy-copy-copy.jpg",
+        "assets/years/2016/11th-di-football-pic-1-copy-copy-copy.jpg",
+        "assets/years/2016/11th-di-football-pic-3-copy-copy-copy.jpg"
+      ],
+      "videos": [],
+      "description": "The 2016 archive includes the annual shirt and football photos from DI XI.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "Annual shirt and football photos available"
+      "archive": "4 verified images tied to 2016",
+      "videoCount": 0
     },
     {
       "key": "12",
@@ -154,11 +202,20 @@ window.DEWEES_DATA = {
       "year": 2017,
       "title": "The Twelfth Invitational",
       "tag": "Football Era",
-      "image": "assets/winner-12.jpg",
-      "description": "The Invitational continued with football, poker and championship traditions.",
+      "image": "assets/years/2017/12th-winner-pic.jpg",
+      "media": [
+        "assets/years/2017/2017-logo.png",
+        "assets/years/2017/12th-winner-pic.jpg",
+        "assets/years/2017/achilles-2-copy-copy-copy.jpg",
+        "assets/years/2017/achilles-1-copy-copy-copy.jpg",
+        "assets/years/2017/12th-annual-group-shot.jpg"
+      ],
+      "videos": [],
+      "description": "The 2017 archive includes the DI XII logo, group photo, winner photo and other photographs saved with that year.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "Group and winner photos available"
+      "archive": "5 verified images tied to 2017",
+      "videoCount": 0
     },
     {
       "key": "13",
@@ -167,11 +224,24 @@ window.DEWEES_DATA = {
       "year": 2018,
       "title": "First Flush",
       "tag": "Tradition",
-      "image": "assets/first-flush-13.jpg",
-      "description": "A humorous side tradition earned a trophy and a lasting place in Invitational history.",
+      "image": "assets/years/2018/13th-trophy.jpg",
+      "media": [
+        "assets/years/2018/di13-2.jpg",
+        "assets/years/2018/13th-trophy.jpg",
+        "assets/years/2018/di13-6.jpg",
+        "assets/years/2018/di13-3.jpg",
+        "assets/years/2018/di13-7.jpg",
+        "assets/years/2018/di13-1.jpg",
+        "assets/years/2018/di13-4.jpg",
+        "assets/years/2018/di-13-ff-copy-copy-copy.jpg",
+        "assets/years/2018/di13-5.jpg"
+      ],
+      "videos": [],
+      "description": "The 2018 archive includes DI XIII poker photos, the DI trophy and the First Flush tradition.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
-      "archive": "First Flush and trophy photos available"
+      "archive": "9 verified images tied to 2018",
+      "videoCount": 0
     },
     {
       "key": "14",
@@ -180,11 +250,17 @@ window.DEWEES_DATA = {
       "year": 2019,
       "title": "The Final Football Chapter",
       "tag": "Transition",
-      "image": "assets/football-2.jpg",
-      "description": "The last Invitational before COVID and the eventual transition from football to golf.",
+      "image": "assets/years/2019/di-14-chips-copy-copy-copy.jpg",
+      "media": [
+        "assets/years/2019/miketffdi14.jpg",
+        "assets/years/2019/di-14-chips-copy-copy-copy.jpg"
+      ],
+      "videos": [],
+      "description": "The 2019 archive includes the DI XIV poker-chip photo and First Flush material from that year.",
       "format": "Football + Poker",
       "champion": "Bobby Perrotti",
-      "archive": "Photos and stories to be added"
+      "archive": "2 verified images tied to 2019",
+      "videoCount": 0
     },
     {
       "key": "2020",
@@ -193,11 +269,14 @@ window.DEWEES_DATA = {
       "year": 2020,
       "title": "A Pause and a Change",
       "tag": "No Event",
-      "image": "assets/golf-1.jpg",
-      "description": "COVID interrupted the annual schedule. The event later returned in the summer with golf replacing football.",
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "COVID interrupted the annual schedule. No event was held in 2020.",
       "format": "No event",
       "champion": "No champion",
-      "archive": "Transition year"
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "15",
@@ -206,11 +285,14 @@ window.DEWEES_DATA = {
       "year": 2021,
       "title": "The Golf Era Begins",
       "tag": "Golf Era",
-      "image": "assets/golf-1.jpg",
-      "description": "The Invitational returned in summer, with golf replacing football and poker remaining the evening centerpiece.",
+      "image": null,
+      "media": [],
+      "videos": [],
+      "description": "The Invitational returned in summer, with golf replacing football and poker remaining the evening centerpiece. No verified 2021 photos are currently in the year folder.",
       "format": "Golf + Poker",
       "champion": "Dan Cronin",
-      "archive": "Golf-era photos to be sorted"
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "2022",
@@ -219,11 +301,14 @@ window.DEWEES_DATA = {
       "year": 2022,
       "title": "The Pennsylvania Move",
       "tag": "No Event",
-      "image": "assets/hero-2.jpg",
+      "image": null,
+      "media": [],
+      "videos": [],
       "description": "There was no Invitational during the move to Pennsylvania.",
       "format": "No event",
       "champion": "No champion",
-      "archive": "Transition year"
+      "archive": "No verified photo currently in this year folder",
+      "videoCount": 0
     },
     {
       "key": "16",
@@ -232,11 +317,17 @@ window.DEWEES_DATA = {
       "year": 2023,
       "title": "A New Chapter",
       "tag": "Golf Era",
-      "image": "assets/winner-16.jpg",
-      "description": "The Invitational returned after the move, opening a new chapter while preserving the annual tradition.",
+      "image": "assets/years/2023/di-16th-winner-lee-d-copy-2.jpg",
+      "media": [
+        "assets/years/2023/di-16th-winner-lee-d-copy-2.jpg",
+        "assets/years/2023/di-16-ring-logo-copy-copy-copy.png"
+      ],
+      "videos": [],
+      "description": "The Invitational returned after the move. The 2023 archive includes the DI XVI logo and Lee D. winner photo.",
       "format": "Golf + Poker",
       "champion": "Lee D.",
-      "archive": "Winner photo and annual logo available"
+      "archive": "2 verified images tied to 2023",
+      "videoCount": 0
     },
     {
       "key": "17",
@@ -245,11 +336,29 @@ window.DEWEES_DATA = {
       "year": 2024,
       "title": "Kept Alive by the Group",
       "tag": "Golf Era",
-      "image": "assets/hero-2.jpg",
-      "description": "A meaningful year in the event\u2019s new home, with the group\u2019s enthusiasm helping carry the tradition forward.",
+      "image": "assets/years/2024/dixviikyle-trophy.jpg",
+      "media": [
+        "assets/years/2024/dixvii-first-flush.jpg",
+        "assets/years/2024/dixvii-group-pic.jpg",
+        "assets/years/2024/di-17-wayne-kerry-copy-copy-copy.jpg",
+        "assets/years/2024/rick.jpg",
+        "assets/years/2024/kyle.jpg",
+        "assets/years/2024/di-17-rick-kerry-copy-copy-copy.jpg",
+        "assets/years/2024/dixviikyle-trophy.jpg",
+        "assets/years/2024/di-17-ff-copy-copy-copy.jpg",
+        "assets/years/2024/dixvii-trophy.jpg",
+        "assets/years/2024/mike-t.jpg",
+        "assets/years/2024/rob-mike-t.jpg",
+        "assets/years/2024/di-17-group-copy-copy-copy.jpg",
+        "assets/years/2024/tom-w.jpg",
+        "assets/years/2024/wayne.jpg"
+      ],
+      "videos": [],
+      "description": "The 2024 folder contains the DI XVII group, poker, trophy and winner photographs from the event.",
       "format": "Golf + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "Recap, golf, poker and award photos available"
+      "archive": "14 verified images tied to 2024",
+      "videoCount": 0
     },
     {
       "key": "18",
@@ -258,36 +367,71 @@ window.DEWEES_DATA = {
       "year": 2025,
       "title": "Golf by Day. Poker by Night.",
       "tag": "Current Era",
-      "image": "assets/hero-1.jpg",
-      "description": "The modern Invitational balances golf and poker while keeping the annual gathering at the center.",
+      "image": "assets/years/2025/di-18-winner-rob-knarr.jpg",
+      "media": [
+        "assets/years/2025/di-18-group-shot-copy-copy.jpg",
+        "assets/years/2025/di-18-winner-rob-knarr.jpg",
+        "assets/years/2025/di-18-action-2-copy-copy-copy.jpg",
+        "assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg",
+        "assets/years/2025/di-18-keener-rob-k-copy-copy.jpg",
+        "assets/years/2025/di-18-ff-jack-d-copy-copy.jpg",
+        "assets/years/2025/di-18-group-shot-3-copy-copy.jpg",
+        "assets/years/2025/di-18-action-copy-copy-copy.jpg",
+        "assets/years/2025/di-18-kenneth-2-copy-copy.jpg",
+        "assets/years/2025/di-18-kerry-wayne-copy-copy.jpg",
+        "assets/years/2025/di-18-kenneth-1-copy-copy.jpg",
+        "assets/years/2025/di-18-zak-rob-k.jpg"
+      ],
+      "videos": [],
+      "description": "The 2025 folder contains the DI XVIII group, golf, poker, First Flush and Rob Knarr championship photographs.",
       "format": "Golf + Poker",
       "champion": "Rob Knarr",
-      "archive": "Golf, poker and winner photos available"
+      "archive": "12 verified images tied to 2025",
+      "videoCount": 0
     },
     {
       "key": "19",
       "label": "19th",
       "annual": "19th Annual \u00b7 2026",
       "year": 2026,
-      "title": "The Next Chapter",
-      "tag": "Upcoming",
-      "image": "assets/logo.png",
-      "description": "The 19th Annual DeWees Invitational will add the next chapter to the tradition.",
+      "title": "Rick Wins Again",
+      "tag": "Current Era",
+      "image": "assets/years/2026/img-1483.jpeg",
+      "media": [
+        "assets/years/2026/2026-tournament-sheet.png",
+        "assets/years/2026/2026-logo.png",
+        "assets/years/2026/img-1471.jpeg",
+        "assets/years/2026/img-1474.jpeg",
+        "assets/years/2026/img-1482.jpeg",
+        "assets/years/2026/img-1470.jpeg",
+        "assets/years/2026/img-1450.jpeg",
+        "assets/years/2026/img-1479.jpeg",
+        "assets/years/2026/img-1440.jpeg",
+        "assets/years/2026/img-1445.jpeg",
+        "assets/years/2026/img-1453.jpeg",
+        "assets/years/2026/img-1472.jpeg",
+        "assets/years/2026/img-1492.jpeg",
+        "assets/years/2026/img-1483.jpeg",
+        "assets/years/2026/img-1490.jpeg"
+      ],,
+      "videos": [],
+      "description": "DI XIX brought the modern Invitational together with golf by day and poker by night. Rick Stoll captured his second poker championship, 16 years after his first.",
       "format": "Golf + Poker",
-      "champion": "To be determined",
-      "archive": "Event details to be added"
+      "champion": "Rick Stoll \u00b7 2-time champion",
+      "archive": "45 verified images tied to 2026",
+      "videoCount": 15
     }
   ],
   "champions": [
     {
       "di": "1",
       "year": "2006",
-      "winner": "Record not kept"
+      "winner": "No formal poker tournament"
     },
     {
       "di": "2",
       "year": "2007",
-      "winner": "Record not kept"
+      "winner": "No formal poker tournament"
     },
     {
       "di": "3",
@@ -382,7 +526,43 @@ window.DEWEES_DATA = {
     {
       "di": "19",
       "year": "2026",
-      "winner": "To be determined"
+      "winner": "Rick Stoll"
+    }
+  ],
+  "repeatChampions": [
+    {
+      "name": "Kerry DeWees",
+      "titles": 3,
+      "years": "2009 \u00b7 2014 \u00b7 2017"
+    },
+    {
+      "name": "Kyle Radzinski",
+      "titles": 3,
+      "years": "2013 \u00b7 2016 \u00b7 2024"
+    },
+    {
+      "name": "Dan Cronin",
+      "titles": 3,
+      "years": "2015 \u00b7 2018 \u00b7 2021"
+    },
+    {
+      "name": "Rick Stoll",
+      "titles": 2,
+      "years": "2010 \u00b7 2026"
+    }
+  ],
+  "golfChampions": [
+    {
+      "year": "2024",
+      "winners": "Kyle R. \u00b7 Thomas W. \u00b7 Zack R."
+    },
+    {
+      "year": "2025",
+      "winners": "Kerry D. \u00b7 Joe B. \u00b7 Wayne S."
+    },
+    {
+      "year": "2026",
+      "winners": "Joe B. \u00b7 Jon W. \u00b7 Kyle R. \u00b7 Kerry D."
     }
   ]
 };
