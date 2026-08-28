@@ -1,7 +1,8 @@
 window.DEWEES_DATA = {
   "event": {
-    "date": "19th Annual \u00b7 2026",
-    "location": "Pennsylvania"
+    "date": "July 17, 2027 · 9:00 AM",
+    "location": "Pennsylvania",
+    "start": "2027-07-17T09:00:00-04:00"
   },
   "years": [
     {
@@ -413,8 +414,8 @@ window.DEWEES_DATA = {
         "assets/years/2026/img-1492.jpeg",
         "assets/years/2026/img-1483.jpeg",
         "assets/years/2026/img-1490.jpeg"
-      ],,
-      "videos": [],
+      ],
+      "videos": ["assets/videos/di-2026-golf-montage.mp4", "assets/videos/di-2026-swing-reel.mp4"],
       "description": "DI XIX brought the modern Invitational together with golf by day and poker by night. Rick Stoll captured his second poker championship, 16 years after his first.",
       "format": "Golf + Poker",
       "champion": "Rick Stoll \u00b7 2-time champion",

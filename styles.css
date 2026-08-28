@@ -236,3 +236,74 @@ footer p{color:#9eada8;font-size:.72rem}
 .year-archive-empty strong{font-family:"Cormorant Garamond";font-size:4rem;color:var(--green)}
 .year-archive-empty span{color:var(--muted)}
 @media(max-width:760px){.year-archive-grid{grid-template-columns:repeat(2,1fr)}.year-media-placeholder strong{font-size:4.5rem}}
+
+/* ===== Locked 2027 site update ===== */
+.site-brand{font-size:1.55rem;letter-spacing:.025em}
+.hero-inner{max-width:1250px}
+.hero h1{font-size:clamp(5.2rem,10vw,10.5rem);max-width:1200px;font-weight:700;letter-spacing:-.035em;text-shadow:0 8px 35px rgba(0,0,0,.28)}
+.hero-tagline{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4vw,4.1rem);line-height:1.05;margin:14px 0 18px;color:#fff}
+.hero-tagline em{color:#ead9aa;font-weight:600}
+.hero-copy{margin-top:12px}
+
+.countdown{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.countdown span{min-width:62px;background:var(--deep);color:white;padding:8px 9px;text-align:center;border-top:2px solid var(--gold)}
+.countdown b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.45rem;line-height:1}
+.countdown small{display:block;color:#d2dcd8;text-transform:uppercase;letter-spacing:.12em;font-size:.49rem;margin-top:3px}
+
+/* Simplified timeline: only years in the rail; details appear below. */
+.year-rail{gap:8px;padding-bottom:28px}
+.year-chip{min-width:82px;padding:13px 14px;text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.35rem;font-weight:700;color:var(--green);border-radius:2px}
+.year-chip:hover,.year-chip.active{color:white;background:var(--green);transform:translateY(-2px)}
+.year-stage{grid-template-columns:minmax(0,330px) 1fr;min-height:0;max-width:1080px;background:white}
+.year-stage:has(.year-stage-media[hidden]){grid-template-columns:1fr}
+.year-stage-media.compact{height:310px;align-self:stretch}
+.year-stage-media.compact img{width:100%;height:100%;object-fit:contain;background:#ece9e0;padding:12px}
+.year-stage-media span{left:14px;top:14px}
+.year-stage-copy{padding:40px 46px}
+.year-stage-copy h3{font-size:3rem;margin:8px 0 16px}
+.year-stage-copy dl{margin:22px 0 0}
+.year-stage-copy dl div{grid-template-columns:100px 1fr;padding:10px 0}
+
+/* Hall of Champions: horizontal playing cards. */
+.champions{overflow:hidden}
+.champion-scroll{display:flex;gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x proximity;padding:28px max(5vw,calc((100vw - 1200px)/2)) 45px;margin-left:-5vw;margin-right:-5vw;text-align:left;scrollbar-color:var(--gold) rgba(255,255,255,.08);scrollbar-width:thin}
+.playing-card{position:relative;flex:0 0 235px;height:360px;background:#f8f4e9;color:#0c352c;border:7px solid #fff;border-radius:14px;box-shadow:0 16px 35px rgba(0,0,0,.28);scroll-snap-align:start;overflow:hidden;display:flex;flex-direction:column}
+.playing-card:before{content:"";position:absolute;inset:6px;border:1px solid rgba(12,53,44,.22);border-radius:8px;pointer-events:none;z-index:4}
+.card-top{display:flex;align-items:flex-start;justify-content:space-between;padding:17px 19px 8px;position:relative;z-index:3}
+.card-top span{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.18rem;letter-spacing:.035em}
+.card-top small{font-weight:700;color:#987a3c}
+.card-center{height:205px;margin:0 17px;display:grid;place-items:center;background:#0c352c;overflow:hidden;border-radius:3px}
+.card-center.has-photo{background:#d9d6cd}
+.card-center img{width:100%;height:100%;object-fit:cover}
+.card-monogram{font-family:"Cormorant Garamond",Georgia,serif;color:var(--gold);font-size:5.5rem;font-weight:700;line-height:1}
+.card-name{padding:13px 19px 12px;position:relative;z-index:3}
+.card-name strong{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.65rem;line-height:1.02;color:#092a24}
+.card-name small{display:block;margin-top:5px;text-transform:uppercase;letter-spacing:.1em;font-size:.52rem;color:#6e776f}
+.card-suit{position:absolute;right:15px;bottom:7px;font-size:1.25rem;color:#987a3c}
+
+/* Final 2026 media: approved photo montage and locked swing reel. */
+.video-features{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.video-feature{background:#092a24;color:white;box-shadow:var(--shadow);overflow:hidden}
+.video-copy{padding:28px 30px 20px}
+.video-copy h3{font-size:2.35rem;margin:6px 0 10px}
+.video-copy p{margin:0;color:#c7d4d0}
+.video-feature video{display:block;width:100%;aspect-ratio:16/9;background:#000;object-fit:contain}
+
+@media(max-width:950px){
+  .event-strip{grid-template-columns:1fr}
+  .event-facts{grid-template-columns:repeat(3,1fr)}
+  .year-stage{grid-template-columns:260px 1fr}
+  .video-features{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .site-brand{font-size:1.25rem}
+  .hero h1{font-size:clamp(4rem,18vw,6.2rem)}
+  .hero-tagline{font-size:2.1rem}
+  .event-facts{grid-template-columns:1fr}
+  .year-stage,.year-stage:has(.year-stage-media[hidden]){grid-template-columns:1fr}
+  .year-stage-media.compact{height:260px}
+  .year-stage-copy{padding:30px 24px}
+  .year-stage-copy h3{font-size:2.5rem}
+  .playing-card{flex-basis:210px;height:330px}
+  .card-center{height:185px}
+}

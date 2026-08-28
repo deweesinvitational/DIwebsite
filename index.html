@@ -22,10 +22,7 @@
   </div>
 
   <header class="topbar">
-    <a class="site-brand" href="#home">
-      <img src="assets/logo.png" alt="The DeWees Invitational">
-      <span>The DeWees Invitational</span>
-    </a>
+    <a class="site-brand" href="#home"><span>The DeWees Invitational</span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
     <nav id="site-nav">
       <a href="#event">This Year</a>
@@ -46,9 +43,9 @@
       </div>
       <div class="hero-vignette"></div>
       <div class="hero-inner">
-        <img class="hero-logo" src="assets/logo.png" alt="The DeWees Invitational logo">
-        <p class="overline">The official home of an annual tradition</p>
-        <h1>The games evolved.<br><em>The tradition endured.</em></h1>
+        <p class="overline">Since 2006 · Golf · Poker · Tradition</p>
+        <h1>The DeWees Invitational</h1>
+        <p class="hero-tagline">The games evolved. <em>The tradition endured.</em></p>
         <p class="hero-copy">A celebration of competition, friendship, old stories, new memories, and the one event that keeps bringing everyone back.</p>
         <div class="hero-actions">
           <a class="button gold" href="#event">This Year’s Invitational</a>
@@ -60,8 +57,9 @@
 
     <section class="event-strip reveal" id="event">
       <div class="event-strip-title">
-        <span>This Year</span>
-        <h2>The next chapter</h2>
+        <span>Next Invitational</span>
+        <h2>DI XX · 2027</h2>
+        <div class="countdown" id="event-countdown" aria-label="Countdown to July 17, 2027 at 9 AM"></div>
       </div>
       <div class="event-facts">
         <div><small>Date</small><strong data-field="eventDate">To be announced</strong></div>
@@ -82,7 +80,7 @@
       <div class="image-stack reveal">
         <figure class="stack-main"><img src="assets/years/2024/dixvii-group-pic.jpg" alt="Friends gathered around the poker table"></figure>
         <figure class="stack-small"><img src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg" alt="Golf at the DeWees Invitational"></figure>
-        <div class="stack-badge"><strong>18+</strong><span>years of tradition</span></div>
+        <div class="stack-badge"><strong>20</strong><span>years of tradition</span></div>
       </div>
     </section>
 
@@ -124,15 +122,14 @@
 
     <section class="timeline-section section" id="timeline">
       <div class="section-title reveal">
-        <span class="eyebrow">The living archive</span>
-        <h2>Explore the years</h2>
-        <p>Choose a year to uncover its photos, logo, winner, artifacts and memories. The archive will grow as more verified material is added.</p>
+        <span class="eyebrow">Invitational History</span>
+        <h2>Year by year</h2>
+        <p>Select a year to see that Invitational’s story, format and poker champion.</p>
       </div>
       <div class="year-rail" id="year-rail" aria-label="Invitational years"></div>
       <article class="year-stage reveal" id="year-stage">
-        <div class="year-stage-media">
+        <div class="year-stage-media compact" id="stage-media-wrap" hidden>
           <img id="stage-image" src="" alt="" hidden>
-          <div id="stage-placeholder" class="year-media-placeholder"><strong>2006</strong><span>No verified photo in the archive</span></div>
           <span id="stage-tag">Founding Year</span>
         </div>
         <div class="year-stage-copy">
@@ -142,9 +139,7 @@
           <dl>
             <div><dt>Format</dt><dd id="stage-format">Cards + Gathering</dd></div>
             <div><dt>Champion</dt><dd id="stage-champion">No formal poker champion</dd></div>
-            <div><dt>Archive</dt><dd id="stage-archive">No verified photo currently in this year folder</dd></div>
           </dl>
-          <button class="text-button" id="open-year">Open this year’s archive <span>→</span></button>
         </div>
       </article>
     </section>
@@ -156,21 +151,7 @@
         <p>Nineteen Invitationals. Seventeen official poker champions. Four men have won more than once.</p>
       </div>
       <div class="repeat-champions reveal" id="repeat-champions"></div>
-      <div class="champion-cards">
-        <article class="champ-card reveal">
-          <img src="assets/years/2017/12th-winner-pic.jpg" alt="Champion presentation">
-          <div><span>12th Annual · 2017</span><h3>Kerry DeWees</h3><p>Three-time champion</p></div>
-        </article>
-        <article class="champ-card featured reveal">
-          <img src="assets/years/2023/di-16th-winner-lee-d-copy-2.jpg" alt="16th Annual champion presentation">
-          <div><span>16th Annual · 2023</span><h3>Lee D.</h3><p>Champion</p></div>
-        </article>
-        <article class="champ-card reveal">
-          <img src="assets/years/2025/di-18-winner-rob-knarr.jpg" alt="18th Annual champion presentation">
-          <div><span>18th Annual · 2025</span><h3>Rob Knarr</h3><p>Champion</p></div>
-        </article>
-      </div>
-      <button class="button outline-light" data-open="champions-modal">View Hall of Champions</button>
+      <div class="champion-scroll reveal" id="champion-scroll" aria-label="Poker champions"></div>
       <div class="golf-champions reveal">
         <span class="eyebrow gold-text">Golf Champions</span>
         <div id="golf-champions"></div>
@@ -213,9 +194,19 @@
         <div class="di19-copy"><span>POKER CHAMPION</span><h3>Rick Stoll</h3><p>Two-time champion · 2010 & 2026</p><span>GOLF CHAMPIONS</span><p>Joe B. · Jon W. · Kyle R. · Kerry D.</p></div>
         <img src="assets/years/2026/img-1483.jpeg" alt="Rick Stoll with the 2026 championship trophy">
       </div>
-      <div class="swing-feature reveal">
-        <div><span class="eyebrow">Coming together</span><h3>DI XIX Swing Reel</h3><p>The 2026 swing clips are being cut into a rapid-fire highlight reel. The site is already set up for the finished montage and soundtrack.</p></div>
-        <div class="swing-placeholder"><span>2026</span><strong>SWING REEL</strong><small>Montage in production</small></div>
+      <div class="video-features reveal">
+        <article class="video-feature">
+          <div class="video-copy"><span class="eyebrow gold-text">2026 Golf</span><h3>Golf Photo Montage</h3><p>The final DI XIX golf photo montage with the approved arena-rock soundtrack.</p></div>
+          <video controls playsinline preload="metadata" poster="assets/years/2026/img-1430.jpeg">
+            <source src="assets/videos/di-2026-golf-montage.mp4" type="video/mp4">
+          </video>
+        </article>
+        <article class="video-feature">
+          <div class="video-copy"><span class="eyebrow gold-text">Tee Shots</span><h3>DI XIX Swing Reel</h3><p>The locked 2026 rapid-fire tee-shot reel.</p></div>
+          <video controls playsinline preload="metadata" poster="assets/years/2026/img-1440.jpeg">
+            <source src="assets/videos/di-2026-swing-reel.mp4" type="video/mp4">
+          </video>
+        </article>
       </div>
     </section>
 
@@ -273,33 +264,15 @@
 
   <dialog id="event-modal" class="site-modal">
     <button class="modal-close" aria-label="Close">×</button>
-    <span class="eyebrow">This Year</span>
+    <span class="eyebrow">DI XX · 2027</span>
     <h2>The next Invitational</h2>
     <div class="modal-grid">
-      <div><small>Date</small><strong>To be announced</strong></div>
-      <div><small>Location</small><strong>To be announced</strong></div>
+      <div><small>Date</small><strong>July 17, 2027 · 9:00 AM</strong></div>
+      <div><small>Location</small><strong data-field="eventLocation">Pennsylvania</strong></div>
       <div><small>Golf</small><strong>Details to be added</strong></div>
       <div><small>Poker</small><strong>Details to be added</strong></div>
     </div>
     <p>The complete schedule, attendees, golf format, poker structure, directions and announcements will live here once confirmed.</p>
-  </dialog>
-
-  <dialog id="champions-modal" class="site-modal champions-dialog">
-    <button class="modal-close" aria-label="Close">×</button>
-    <span class="eyebrow">Hall of Champions</span>
-    <h2>Previous Winners</h2>
-    <p>The official DeWees Invitational winner list. The first two Invitationals were full DI events, but there was no formal poker tournament until DI III in 2008. The no-event years are preserved as part of the history.</p>
-    <div class="champions-table-wrap">
-      <table class="champions-table">
-        <thead><tr><th>DI</th><th>Year</th><th>Winner</th></tr></thead>
-        <tbody id="champions-table-body"></tbody>
-      </table>
-    </div>
-  </dialog>
-
-  <dialog id="year-modal" class="site-modal year-modal">
-    <button class="modal-close" aria-label="Close">×</button>
-    <div id="year-modal-content"></div>
   </dialog>
 
   <dialog id="lightbox" class="lightbox">

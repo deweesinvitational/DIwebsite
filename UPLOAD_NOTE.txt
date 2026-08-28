@@ -1,1 +1,16 @@
-Clean web build. Assets folder contains only media referenced by the website. Upload the contents of this folder to the root of the DIwebsite GitHub repository.
+DI WEBSITE UPDATE — 2027 / FINAL 2026 MEDIA
+
+Upload the CONTENTS of this folder to the root of the existing DIwebsite GitHub repository.
+Do not delete the repository's existing CNAME file if it is present.
+
+This build includes:
+- July 17, 2027 at 9:00 AM countdown
+- 20 years of tradition
+- simplified year-by-year history (no archive buttons/modals)
+- horizontal playing-card Hall of Champions
+- confirmed golf champions for 2024, 2025 and 2026
+- final 2026 Golf Photo Montage (arena rock, no keyboard)
+- locked 2026 Tee Shot Swing Reel
+- 2026 Rick Stoll poker championship recap
+
+The package contains fewer than 100 files for GitHub's browser uploader.
