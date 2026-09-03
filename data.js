@@ -18,7 +18,6 @@ window.DEWEES_DATA = {
       "description": "The DeWees Invitational began in 2006 as an annual event built around friends and cards. It was always a DeWees Invitational event, but there was not yet a formal poker tournament.",
       "format": "Cards + Gathering",
       "champion": "No formal poker champion",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -34,7 +33,6 @@ window.DEWEES_DATA = {
       "description": "The Invitational returned for its second annual event. Cards remained part of the gathering, but there was still no formal poker tournament.",
       "format": "Cards + Gathering",
       "champion": "No formal poker champion",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -50,7 +48,6 @@ window.DEWEES_DATA = {
       "description": "DI III introduced the first formal DeWees Invitational poker tournament. Football, food and poker formed the structure that would define the Invitational for years.",
       "format": "Football + Poker",
       "champion": "Mike Herman \u00b7 First DI poker champion",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -66,7 +63,6 @@ window.DEWEES_DATA = {
       "description": "The event continued its football-and-poker format as the annual tradition took hold.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -84,7 +80,6 @@ window.DEWEES_DATA = {
       "description": "A memorable invitation and championship tradition marked one of the Invitational\u2019s early milestones.",
       "format": "Football + Poker",
       "champion": "Rick Stoll",
-      "archive": "1 verified image tied to 2010",
       "videoCount": 0
     },
     {
@@ -102,7 +97,6 @@ window.DEWEES_DATA = {
       "description": "Football by day and poker by night remained the familiar rhythm of the Invitational.",
       "format": "Football + Poker",
       "champion": "Bob DeWees",
-      "archive": "1 verified image tied to 2011",
       "videoCount": 0
     },
     {
@@ -120,7 +114,6 @@ window.DEWEES_DATA = {
       "description": "The group, competition and annual identity continued to grow.",
       "format": "Football + Poker",
       "champion": "Ryan Fischer",
-      "archive": "1 verified image tied to 2012",
       "videoCount": 0
     },
     {
@@ -138,7 +131,6 @@ window.DEWEES_DATA = {
       "description": "Another chapter in the long-running football-and-poker era.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "1 verified image tied to 2013",
       "videoCount": 0
     },
     {
@@ -151,10 +143,9 @@ window.DEWEES_DATA = {
       "image": null,
       "media": [],
       "videos": [],
-      "description": "The annual event continued its football-and-poker tradition. No verified photo from the 2014 folder is currently in the archive.",
+      "description": "The annual event continued its football-and-poker tradition.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -172,7 +163,6 @@ window.DEWEES_DATA = {
       "description": "The tenth annual event marked a full decade of the DeWees Invitational.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
-      "archive": "1 verified image tied to 2015",
       "videoCount": 0
     },
     {
@@ -190,10 +180,9 @@ window.DEWEES_DATA = {
         "assets/years/2016/11th-di-football-pic-3-copy-copy-copy.jpg"
       ],
       "videos": [],
-      "description": "The 2016 archive includes the annual shirt and football photos from DI XI.",
+      "description": "The Invitational continued its annual football-and-poker tradition in DI XI.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "4 verified images tied to 2016",
       "videoCount": 0
     },
     {
@@ -212,10 +201,9 @@ window.DEWEES_DATA = {
         "assets/years/2017/12th-annual-group-shot.jpg"
       ],
       "videos": [],
-      "description": "The 2017 archive includes the DI XII logo, group photo, winner photo and other photographs saved with that year.",
+      "description": "DI XII continued the Invitational tradition with football and poker.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
-      "archive": "5 verified images tied to 2017",
       "videoCount": 0
     },
     {
@@ -238,10 +226,9 @@ window.DEWEES_DATA = {
         "assets/years/2018/di13-5.jpg"
       ],
       "videos": [],
-      "description": "The 2018 archive includes DI XIII poker photos, the DI trophy and the First Flush tradition.",
+      "description": "DI XIII carried on the poker tournament and First Flush tradition.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
-      "archive": "9 verified images tied to 2018",
       "videoCount": 0
     },
     {
@@ -257,10 +244,9 @@ window.DEWEES_DATA = {
         "assets/years/2019/di-14-chips-copy-copy-copy.jpg"
       ],
       "videos": [],
-      "description": "The 2019 archive includes the DI XIV poker-chip photo and First Flush material from that year.",
+      "description": "DI XIV continued the annual poker tournament and First Flush tradition.",
       "format": "Football + Poker",
       "champion": "Bobby Perrotti",
-      "archive": "2 verified images tied to 2019",
       "videoCount": 0
     },
     {
@@ -276,7 +262,6 @@ window.DEWEES_DATA = {
       "description": "COVID interrupted the annual schedule. No event was held in 2020.",
       "format": "No event",
       "champion": "No champion",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -292,7 +277,6 @@ window.DEWEES_DATA = {
       "description": "The Invitational returned in summer, with golf replacing football and poker remaining the evening centerpiece. No verified 2021 photos are currently in the year folder.",
       "format": "Golf + Poker",
       "champion": "Dan Cronin",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -308,7 +292,6 @@ window.DEWEES_DATA = {
       "description": "There was no Invitational during the move to Pennsylvania.",
       "format": "No event",
       "champion": "No champion",
-      "archive": "No verified photo currently in this year folder",
       "videoCount": 0
     },
     {
@@ -324,10 +307,9 @@ window.DEWEES_DATA = {
         "assets/years/2023/di-16-ring-logo-copy-copy-copy.png"
       ],
       "videos": [],
-      "description": "The Invitational returned after the move. The 2023 archive includes the DI XVI logo and Lee D. winner photo.",
+      "description": "The Invitational returned after the move, with Lee D. winning the DI XVI poker championship.",
       "format": "Golf + Poker",
       "champion": "Lee D.",
-      "archive": "2 verified images tied to 2023",
       "videoCount": 0
     },
     {
@@ -358,7 +340,6 @@ window.DEWEES_DATA = {
       "description": "The 2024 folder contains the DI XVII group, poker, trophy and winner photographs from the event.",
       "format": "Golf + Poker",
       "champion": "Kyle Radzinski",
-      "archive": "14 verified images tied to 2024",
       "videoCount": 0
     },
     {
@@ -387,7 +368,6 @@ window.DEWEES_DATA = {
       "description": "The 2025 folder contains the DI XVIII group, golf, poker, First Flush and Rob Knarr championship photographs.",
       "format": "Golf + Poker",
       "champion": "Rob Knarr",
-      "archive": "12 verified images tied to 2025",
       "videoCount": 0
     },
     {
@@ -419,7 +399,6 @@ window.DEWEES_DATA = {
       "description": "DI XIX brought the modern Invitational together with golf by day and poker by night. Rick Stoll captured his second poker championship, 16 years after his first.",
       "format": "Golf + Poker",
       "champion": "Rick Stoll \u00b7 2-time champion",
-      "archive": "45 verified images tied to 2026",
       "videoCount": 15
     }
   ],

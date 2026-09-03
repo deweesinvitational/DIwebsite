@@ -88,10 +88,14 @@ function selectYear(y, button) {
       img.src = y.image;
       img.alt = `${y.annual} — ${y.title}`;
       $('#stage-tag').textContent = y.tag;
+      const funFact = $('#fun-fact-btn');
+      if (funFact) funFact.hidden = y.year !== 2017;
     } else {
       wrap.hidden = true;
       img.hidden = true;
       img.removeAttribute('src');
+      const funFact = $('#fun-fact-btn');
+      if (funFact) funFact.hidden = true;
     }
   }
   $('#stage-year').textContent = y.annual;
@@ -139,7 +143,7 @@ $('#copyright-year').textContent = new Date().getFullYear();
 
 const repeatChampions = $('#repeat-champions');
 if (repeatChampions && data.repeatChampions) {
-  repeatChampions.innerHTML = data.repeatChampions.map(c => `<article class="repeat-champion"><b>${c.titles}×</b><strong>${c.name}</strong><small>${c.years}</small></article>`).join('');
+  repeatChampions.innerHTML = data.repeatChampions.map(c => `<article class="repeat-champion"><b>${c.titles === 3 ? 'Three-Time Champion' : 'Two-Time Champion'}</b><strong>${c.name}</strong><small>${c.years}</small></article>`).join('');
 }
 
 const golfChampions = $('#golf-champions');
@@ -166,8 +170,26 @@ if (championScroll) {
       <div class="card-center ${photo ? 'has-photo' : ''}">
         ${photo ? `<img src="${photo}" alt="${row.winner}, ${row.year} DeWees Invitational poker champion" loading="lazy">` : `<div class="card-monogram">DI</div>`}
       </div>
-      <div class="card-name"><strong>${row.winner}</strong>${repeat ? `<small>${repeat.titles}× Champion</small>` : '<small>Poker Champion</small>'}</div>
+      <div class="card-name"><strong>${row.winner}</strong>${repeat ? `<small>${repeat.titles === 3 ? 'Three-Time Champion' : 'Two-Time Champion'}</small>` : '<small>Poker Champion</small>'}</div>
       <div class="card-suit">♠</div>
     </article>`;
   }).join('');
+}
+
+
+// 2017 fun-fact reveal: Kerry's Achilles injury.
+const funFactBtn = $('#fun-fact-btn');
+const achillesDialog = $('#achilles-fun-fact');
+if (funFactBtn && achillesDialog) {
+  funFactBtn.addEventListener('click', () => achillesDialog.showModal());
+  achillesDialog.querySelector('.fun-fact-close')?.addEventListener('click', () => achillesDialog.close());
+  achillesDialog.querySelector('.achilles-answer')?.addEventListener('click', (e) => {
+    e.currentTarget.hidden = true;
+    achillesDialog.querySelector('.achilles-reveal').hidden = false;
+  });
+  achillesDialog.querySelector('.postop-button')?.addEventListener('click', (e) => {
+    e.currentTarget.hidden = true;
+    achillesDialog.querySelector('.postop-photo').hidden = false;
+  });
+  achillesDialog.addEventListener('click', (e) => { if (e.target === achillesDialog) achillesDialog.close(); });
 }

@@ -37,9 +37,11 @@
   <main>
     <section class="hero" id="home">
       <div class="hero-slides" aria-hidden="true">
-        <img class="active" src="assets/years/2024/dixvii-group-pic.jpg" alt="">
-        <img src="assets/years/2025/di-18-group-shot-copy-copy.jpg" alt="">
-        <img src="assets/years/2026/img-1430.jpeg" alt="">
+        <img class="active" src="assets/homepage/01-dixvii-group.jpg" alt="">
+        <img src="assets/homepage/02-dixvii-trophy.jpg" alt="">
+        <img src="assets/homepage/03-wayne.jpg" alt="">
+        <img src="assets/homepage/04-di-xii-group.jpg" alt="">
+        <img src="assets/homepage/05-di-xviii-group.jpg" alt="">
       </div>
       <div class="hero-vignette"></div>
       <div class="hero-inner">
@@ -110,11 +112,12 @@
         </article>
         <article class="era-card reveal">
           <div class="era-number">03</div>
-          <img src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg" alt="Golf during the DeWees Invitational">
+          <img src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg" alt="Kerry's actual tee shot during the practice round at Overlook Golf Course on July 19, 2024">
           <div class="era-content">
             <span>The Golf Years</span>
             <h3>A new format, the same annual tradition</h3>
             <p>Golf replaced football, bringing a welcome new chapter without changing the purpose of the Invitational.</p>
+            <p class="photo-note">Kerry’s actual tee shot during the practice round at Overlook Golf Course on July 19, 2024.</p>
           </div>
         </article>
       </div>
@@ -131,6 +134,7 @@
         <div class="year-stage-media compact" id="stage-media-wrap" hidden>
           <img id="stage-image" src="" alt="" hidden>
           <span id="stage-tag">Founding Year</span>
+          <button class="fun-fact-btn" id="fun-fact-btn" type="button" hidden>FUN FACT!</button>
         </div>
         <div class="year-stage-copy">
           <span id="stage-year">1st Annual · 2006</span>
@@ -197,7 +201,7 @@
       <div class="video-features reveal">
         <article class="video-feature">
           <div class="video-copy"><span class="eyebrow gold-text">2026 Golf</span><h3>Golf Photo Montage</h3><p>The final DI XIX golf photo montage with the approved arena-rock soundtrack.</p></div>
-          <video controls playsinline preload="metadata" poster="assets/years/2026/img-1430.jpeg">
+          <video controls playsinline loop preload="metadata" poster="assets/years/2026/img-1430.jpeg">
             <source src="assets/videos/di-2026-golf-montage.mp4" type="video/mp4">
           </video>
         </article>
@@ -233,7 +237,7 @@
         <button class="gallery-item tall" data-cat="poker" data-src="assets/years/2023/di-16th-winner-lee-d-copy-2.jpg"><img src="assets/years/2023/di-16th-winner-lee-d-copy-2.jpg" alt="2023 Lee D. champion presentation" loading="lazy"><span>DI XVI · 2023 · Champion</span></button>
         <button class="gallery-item wide" data-cat="poker" data-src="assets/years/2024/dixvii-group-pic.jpg"><img src="assets/years/2024/dixvii-group-pic.jpg" alt="2024 DI XVII group" loading="lazy"><span>DI XVII · 2024 · Group</span></button>
         <button class="gallery-item tall" data-cat="poker" data-src="assets/years/2024/dixviikyle-trophy.jpg"><img src="assets/years/2024/dixviikyle-trophy.jpg" alt="2024 Kyle Radzinski champion" loading="lazy"><span>DI XVII · 2024 · Champion</span></button>
-        <button class="gallery-item" data-cat="golf" data-src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg"><img src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg" alt="2025 golf" loading="lazy"><span>DI XVIII · 2025 · Golf</span></button>
+        <button class="gallery-item" data-cat="golf" data-src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg"><img src="assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg" alt="Kerry's actual tee shot during the practice round at Overlook Golf Course on July 19, 2024" loading="lazy"><span>Kerry’s actual tee shot · Overlook Golf Course · July 19, 2024</span></button>
         <button class="gallery-item tall" data-cat="poker" data-src="assets/years/2025/di-18-winner-rob-knarr.jpg"><img src="assets/years/2025/di-18-winner-rob-knarr.jpg" alt="2025 Rob Knarr champion" loading="lazy"><span>DI XVIII · 2025 · Champion</span></button>
         <button class="gallery-item wide" data-cat="golf" data-src="assets/years/2026/img-1430.jpeg"><img src="assets/years/2026/img-1430.jpeg" alt="2026 golf group" loading="lazy"><span>DI XIX · 2026 · Golf</span></button>
         <button class="gallery-item tall" data-cat="poker" data-src="assets/years/2026/img-1483.jpeg"><img src="assets/years/2026/img-1483.jpeg" alt="2026 Rick Stoll champion" loading="lazy"><span>DI XIX · 2026 · Champion</span></button>
@@ -282,5 +286,19 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <dialog class="fun-fact-dialog" id="achilles-fun-fact">
+    <button class="fun-fact-close" type="button" aria-label="Close">×</button>
+    <div class="ambulance-cartoon" aria-hidden="true">🚑</div>
+    <h3>Kerry won the poker tournament this year — plus did something else.</h3>
+    <p class="fun-question">Do you know what?</p>
+    <button class="achilles-answer" type="button">CLICK TO FIND OUT</button>
+    <div class="achilles-reveal" hidden>
+      <p class="snap-line">HE SNAPPED HIS ACHILLES!</p>
+      <p class="graphic-warning">⚠ CAUTION! GRAPHIC IMAGE! ⚠</p>
+      <button class="postop-button" type="button">CLICK FOR POST-OP PICTURE</button>
+      <img class="postop-photo" src="assets/years/2017/kerry-achilles-post-op.jpg" alt="Kerry's post-operative Achilles photo" hidden>
+    </div>
+  </dialog>
 </body>
 </html>
