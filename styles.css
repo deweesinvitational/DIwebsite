@@ -330,3 +330,11 @@ footer p{color:#9eada8;font-size:.72rem}
 /* Approved intro collage: preserve page layout; replace only the two-image stack. */
 .intro-collage .stack-main{position:relative;inset:auto;width:100%;height:auto;transform:none;margin:0}
 .intro-collage .stack-main img{width:100%;height:auto;object-fit:contain;display:block}
+
+/* Locked refinements */
+.intro-collage{position:relative}
+.intro-collage .tradition-badge{right:18px;bottom:18px;width:138px;height:138px;z-index:3}
+.intro-collage .tradition-badge strong{font-size:2.45rem}
+.intro-collage .tradition-badge span{font-size:.52rem;max-width:100px;margin-inline:auto}
+.champion-scroll .playing-card.clone{pointer-events:none}
+@media (max-width:720px){.intro-collage .tradition-badge{width:104px;height:104px;right:10px;bottom:10px}.intro-collage .tradition-badge strong{font-size:1.9rem}}

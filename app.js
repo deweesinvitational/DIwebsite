@@ -166,7 +166,7 @@ if (championScroll) {
     const photo = winnerPhotos[row.year];
     const repeat = data.repeatChampions.find(c => c.name === row.winner);
     return `<article class="playing-card">
-      <div class="card-top"><span>D.I. ${row.year}</span><small>${row.di}</small></div>
+      <div class="card-top"><span>D.I. ${row.di}</span><small>${row.year}</small></div>
       <div class="card-center ${photo ? 'has-photo' : ''}">
         ${photo ? `<img src="${photo}" alt="${row.winner}, ${row.year} DeWees Invitational poker champion" loading="lazy">` : `<div class="card-monogram">DI</div>`}
       </div>
@@ -174,6 +174,28 @@ if (championScroll) {
       <div class="card-suit">♠</div>
     </article>`;
   }).join('');
+
+
+  // Keep the champion cards moving gently to the left. Duplicate the row for a seamless loop.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && championScroll.scrollWidth > championScroll.clientWidth) {
+    const original = championScroll.innerHTML;
+    championScroll.insertAdjacentHTML('beforeend', original.replaceAll('<article class="playing-card"', '<article class="playing-card clone" aria-hidden="true"'));
+    let paused = false;
+    let raf;
+    const tick = () => {
+      if (!paused) {
+        championScroll.scrollLeft += 0.45;
+        const half = championScroll.scrollWidth / 2;
+        if (championScroll.scrollLeft >= half) championScroll.scrollLeft -= half;
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    championScroll.addEventListener('mouseenter', () => paused = true);
+    championScroll.addEventListener('mouseleave', () => paused = false);
+    championScroll.addEventListener('focusin', () => paused = true);
+    championScroll.addEventListener('focusout', () => paused = false);
+    raf = requestAnimationFrame(tick);
+  }
 }
 
 
