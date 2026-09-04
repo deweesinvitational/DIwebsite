@@ -1,0 +1,462 @@
+[
+  {
+    "path": ".nojekyll",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "404.html",
+    "bytes": 109,
+    "sha256": "104abe3bbdbb9b9ddf97b5bcf7dbe105834876ebc9571e9be5c01da71eaa29bf"
+  },
+  {
+    "path": "CNAME",
+    "bytes": 23,
+    "sha256": "4f0ca53d462a712762f659d5a1c37bc406c67dfb3ff910b39de4a7cd2accacfe"
+  },
+  {
+    "path": "PHOTO_TIMELINE_NOTE.txt",
+    "bytes": 466,
+    "sha256": "3603f37a0f0423fe53a60a18f10207e3ac39868c659cc6e53fdc52499a7ba99d"
+  },
+  {
+    "path": "README.txt",
+    "bytes": 911,
+    "sha256": "bb39759126999b6a6c550e04f8e906af9bd3140f9ca6ba99e4f952d2d267b9de"
+  },
+  {
+    "path": "UPLOAD_NOTE.txt",
+    "bytes": 657,
+    "sha256": "e29607ac7cb4a3320a0c4ebfc4129d5cdb1a9d529cda577b1d6921210f4fc728"
+  },
+  {
+    "path": "app.js",
+    "bytes": 7794,
+    "sha256": "11d3d9e45b421262cc4120485634b116082e268108f76e3e6f10cbcda0e3414b"
+  },
+  {
+    "path": "assets/homepage/01-dixvii-group.jpg",
+    "bytes": 86643,
+    "sha256": "64b02048b178fd0cc7873cffe54244136e4b5cb1df042249a7a45706a5e03c03"
+  },
+  {
+    "path": "assets/homepage/02-dixvii-trophy.jpg",
+    "bytes": 81997,
+    "sha256": "4853d16e879d5e2dc4ee592674d12080e7d366ca29ae3868e616fd913b7059c0"
+  },
+  {
+    "path": "assets/homepage/03-wayne.jpg",
+    "bytes": 67677,
+    "sha256": "3f616869da5b38cdbee191d1006293fa26fb482cdb8ba739714127e9c0080d04"
+  },
+  {
+    "path": "assets/homepage/04-di-xii-group.jpg",
+    "bytes": 749643,
+    "sha256": "d1b61c1b912d19306e882b7998a71f99b76d6c69996b7a7e46d8e9952df76fba"
+  },
+  {
+    "path": "assets/homepage/05-di-xviii-group.jpg",
+    "bytes": 925125,
+    "sha256": "56e2160607a084329e8d969f18e183ea36351ce9c4ebff0141b69088fa8f564f"
+  },
+  {
+    "path": "assets/logo.png",
+    "bytes": 14696,
+    "sha256": "77daba62f5b129933b6d0efb93453f5fe376d6a827a47c207258b1df0e541ef7"
+  },
+  {
+    "path": "assets/more-than-collage.png",
+    "bytes": 1964362,
+    "sha256": "1b19d114c1329e713ddd9a931db66d6a5e8881fadd620121a0c9fb5c09ddac3d"
+  },
+  {
+    "path": "assets/videos/di-2026-golf-montage.mp4",
+    "bytes": 5572314,
+    "sha256": "c1939092ceae529b1cc1e99f91a213e09831fa86eaea93eed98f4bd9ab8ac056"
+  },
+  {
+    "path": "assets/videos/di-2026-swing-reel.mp4",
+    "bytes": 14231499,
+    "sha256": "01ffbbc9042df172f61bc9488d2fa499c0a01c1a5cbb90c3d146087c80c35e04"
+  },
+  {
+    "path": "assets/years/2010/bracelet-year-invite-copy-copy-copy.jpg",
+    "bytes": 267592,
+    "sha256": "c95b967dce3c806486a482648d91343122a6968e4e4c836a3bb6aa727752a956"
+  },
+  {
+    "path": "assets/years/2011/2011-logo.png",
+    "bytes": 25748,
+    "sha256": "933f8ec8d30ec17b5c420e0145d8f57d8434b2d1119c83427f667575a4b1feeb"
+  },
+  {
+    "path": "assets/years/2012/2012-logo.png",
+    "bytes": 250150,
+    "sha256": "edd0ad18d4efad2ff42dab9dc01c4f9571a6a85564ec9591fb9191e12ee51d58"
+  },
+  {
+    "path": "assets/years/2013/2013-logo.png",
+    "bytes": 30599,
+    "sha256": "b7ba1d7cce2fdc67747f18f6764958ddc58b51391e11e52b2c8c304be706951a"
+  },
+  {
+    "path": "assets/years/2015/2015-logo.png",
+    "bytes": 127254,
+    "sha256": "235edfcb5ff87399fb1d3c17cb534b4ffe0c04b63a5aba30696cf65f79001374"
+  },
+  {
+    "path": "assets/years/2016/11th-annual-shirt-copy-copy-copy.jpg",
+    "bytes": 412998,
+    "sha256": "ac1b8f66d2d52936dc248d244c17e5ad9d15c1cf7f1f16a863f787605992e669"
+  },
+  {
+    "path": "assets/years/2016/11th-di-football-pic-1-copy-copy-copy.jpg",
+    "bytes": 491681,
+    "sha256": "28902dbc13993f44f940e34a3059dbcc3639909e09ddf78ee87eede44df41181"
+  },
+  {
+    "path": "assets/years/2016/11th-di-football-pic-2-copy-copy-copy.jpg",
+    "bytes": 486306,
+    "sha256": "7098cb90dba7d6d4f706c2a96aa37f445e7c6d9b1ccdc2769db6c78f30bf02b7"
+  },
+  {
+    "path": "assets/years/2016/11th-di-football-pic-3-copy-copy-copy.jpg",
+    "bytes": 469025,
+    "sha256": "cb6218086e425cae26b44aa9ae55d9b076669e904398befc07f6a521d9b29d47"
+  },
+  {
+    "path": "assets/years/2017/12th-annual-group-shot.jpg",
+    "bytes": 244804,
+    "sha256": "598a9911c10342b59c502157158e6127ab3fb67b62f51eaf19eb6cc1ef50930f"
+  },
+  {
+    "path": "assets/years/2017/12th-winner-pic.jpg",
+    "bytes": 310611,
+    "sha256": "f2afe577d253c1a9191d7988b0aec919a897cddc1bb09a087eed216c164ffd4f"
+  },
+  {
+    "path": "assets/years/2017/2017-logo.png",
+    "bytes": 55873,
+    "sha256": "5a025bca736d655da22b8af6963406331967ba0cefa828eb6338353f938fcb2d"
+  },
+  {
+    "path": "assets/years/2017/achilles-1-copy-copy-copy.jpg",
+    "bytes": 253483,
+    "sha256": "1e7a2ec4a92ed9dc235f142e3174eed84b9bc956a1170d279400e93212b650e0"
+  },
+  {
+    "path": "assets/years/2017/achilles-2-copy-copy-copy.jpg",
+    "bytes": 242909,
+    "sha256": "885f24ad82b5ec558eca7fd78850487445efdfae7cc310ace67e56583c20a6e4"
+  },
+  {
+    "path": "assets/years/2017/kerry-achilles-post-op.jpg",
+    "bytes": 726537,
+    "sha256": "4fa4c799b15212f5ca96674e9d5f0ef6525ceea47fb37df7675ee26351366cf9"
+  },
+  {
+    "path": "assets/years/2018/13th-trophy.jpg",
+    "bytes": 348768,
+    "sha256": "175c8eb3f3fef911e72eee0f08c4fdb1c752a22537ce379a4907cd2b9c4bd1c4"
+  },
+  {
+    "path": "assets/years/2018/di-13-ff-copy-copy-copy.jpg",
+    "bytes": 395177,
+    "sha256": "2653d67f1616747eef97e4138a7cf38dd466cc23557a2e023e4a8f1af729c9ea"
+  },
+  {
+    "path": "assets/years/2018/di13-1.jpg",
+    "bytes": 26084,
+    "sha256": "a1ebd97f12e5edb7a6ab800c91f4497472dcc1fee8b1b808e9cdd2142ac9c0d0"
+  },
+  {
+    "path": "assets/years/2018/di13-2.jpg",
+    "bytes": 37635,
+    "sha256": "06d1bb183d78d945d6375a4b514f5328a268854c61a6b45819970a0811ff6bfc"
+  },
+  {
+    "path": "assets/years/2018/di13-3.jpg",
+    "bytes": 39666,
+    "sha256": "64efeb9f688a36fe631e42efc5428f5d08ceed0ceb79635a0692e64bb1ea02ff"
+  },
+  {
+    "path": "assets/years/2018/di13-4.jpg",
+    "bytes": 20512,
+    "sha256": "be9fa07568e8c66eb5db89a40fa7f48aec9d875123bca6ca21ed0601b540fc2d"
+  },
+  {
+    "path": "assets/years/2018/di13-5.jpg",
+    "bytes": 21989,
+    "sha256": "ef2225ee3c25943b3e1c3b94a949b52adad46d68612fa1cc21a38c20fc27b5f0"
+  },
+  {
+    "path": "assets/years/2018/di13-6.jpg",
+    "bytes": 22372,
+    "sha256": "81b1975e13a283bcc30d8f02ddf3ba177f09783cea6beb91980adeb40a65439f"
+  },
+  {
+    "path": "assets/years/2018/di13-7.jpg",
+    "bytes": 23002,
+    "sha256": "0df2884e1013ebb103d573404851e50e900aa9416334901300187604e5a628af"
+  },
+  {
+    "path": "assets/years/2019/di-14-chips-copy-copy-copy.jpg",
+    "bytes": 344754,
+    "sha256": "7e3c9a54b1a2b22a8ad2ecf8176bcf40ad8bfe05fe60c9538c974ad85ec76ac5"
+  },
+  {
+    "path": "assets/years/2019/miketffdi14.jpg",
+    "bytes": 14436,
+    "sha256": "f869f7572ae4f7128a1e14c0f600d337b0fd96c07a33da22fb906bfeccd87276"
+  },
+  {
+    "path": "assets/years/2023/di-16-ring-logo-copy-copy-copy.png",
+    "bytes": 14761,
+    "sha256": "7b97baff4d402997e596898efa2c1fd637cff1a4c42598a16501fb0cbd7ffb6e"
+  },
+  {
+    "path": "assets/years/2023/di-16th-winner-lee-d-copy-2.jpg",
+    "bytes": 214935,
+    "sha256": "7797c4968b3401ecc20c511c59d1a5fcf74daa123705a0e13f37cf2feea2e789"
+  },
+  {
+    "path": "assets/years/2024/di-17-ff-copy-copy-copy.jpg",
+    "bytes": 265974,
+    "sha256": "90f8cf716c09ff837561fdc6ce3a32a8e7450b6d77a5eb99cdf0426f2a06a441"
+  },
+  {
+    "path": "assets/years/2024/di-17-group-copy-copy-copy.jpg",
+    "bytes": 276811,
+    "sha256": "b178ed6dc73ff74cd4ceedfb344d325b01c2fc40440a02abe4e98b8d77b1881c"
+  },
+  {
+    "path": "assets/years/2024/di-17-rick-kerry-copy-copy-copy.jpg",
+    "bytes": 1512848,
+    "sha256": "09d57fbd0f06f8f2e1da47f2309a8a6301d2b7ba3d48f56262703094101b65f5"
+  },
+  {
+    "path": "assets/years/2024/di-17-wayne-kerry-copy-copy-copy.jpg",
+    "bytes": 433155,
+    "sha256": "e111b654a182fb496bda49dc88e66d17d1342147407fb4108bd591de384ebd00"
+  },
+  {
+    "path": "assets/years/2024/dixvii-first-flush.jpg",
+    "bytes": 66251,
+    "sha256": "f06383704c1c75ad24ed19ef6ae24aefa6087c56164f442965deb7be341da0a0"
+  },
+  {
+    "path": "assets/years/2024/dixvii-group-pic.jpg",
+    "bytes": 86643,
+    "sha256": "64b02048b178fd0cc7873cffe54244136e4b5cb1df042249a7a45706a5e03c03"
+  },
+  {
+    "path": "assets/years/2024/dixvii-trophy.jpg",
+    "bytes": 81997,
+    "sha256": "4853d16e879d5e2dc4ee592674d12080e7d366ca29ae3868e616fd913b7059c0"
+  },
+  {
+    "path": "assets/years/2024/dixviikyle-trophy.jpg",
+    "bytes": 63093,
+    "sha256": "1d51b216234d03f03a96bd08103a23a013f55fe90052732963c11df1a9e6579e"
+  },
+  {
+    "path": "assets/years/2024/kyle.jpg",
+    "bytes": 73807,
+    "sha256": "f4d9d6711113899a5270739bfd9e8af5ad2a1ac176c918b5bc8a33f3fc0c8f21"
+  },
+  {
+    "path": "assets/years/2024/mike-t.jpg",
+    "bytes": 71256,
+    "sha256": "4428bbecc0e6cea131ad3672771f59f8141617b0ed57fd586d46c450858f94a9"
+  },
+  {
+    "path": "assets/years/2024/rick.jpg",
+    "bytes": 85186,
+    "sha256": "45bb3f3362f87178eae53cfaaff9dc020e1dad05ba2ec1df289680fed2042909"
+  },
+  {
+    "path": "assets/years/2024/rob-mike-t.jpg",
+    "bytes": 68697,
+    "sha256": "8e0f4ee9dc109b8bda1fc609cbd809194f90a21dbb05c0edcaf40b3387ab01cf"
+  },
+  {
+    "path": "assets/years/2024/tom-w.jpg",
+    "bytes": 82158,
+    "sha256": "562f8790e17b1b1740462d05085647abb5a65353d6b96d152dda7bddc9b66836"
+  },
+  {
+    "path": "assets/years/2024/wayne.jpg",
+    "bytes": 67677,
+    "sha256": "3f616869da5b38cdbee191d1006293fa26fb482cdb8ba739714127e9c0080d04"
+  },
+  {
+    "path": "assets/years/2025/di-18-action-2-copy-copy-copy.jpg",
+    "bytes": 275240,
+    "sha256": "7e957e2409982ccf481069a9b43804cf45192900525fa4546d64442e646deac2"
+  },
+  {
+    "path": "assets/years/2025/di-18-action-copy-copy-copy.jpg",
+    "bytes": 287141,
+    "sha256": "d6d7afc8bb2aa9c5bf3803119d1cbe3a3f5efc988a1ee952171abd198a5fede8"
+  },
+  {
+    "path": "assets/years/2025/di-18-ff-jack-d-copy-copy.jpg",
+    "bytes": 303709,
+    "sha256": "f797c059fa39023964f5dda6feab2a3267ed784d4506906632ed3640b9ccc11c"
+  },
+  {
+    "path": "assets/years/2025/di-18-group-shot-3-copy-copy.jpg",
+    "bytes": 304437,
+    "sha256": "0db08feab6b772a4de64792f20c672cb2d859aa71260c880e205371b09a87520"
+  },
+  {
+    "path": "assets/years/2025/di-18-group-shot-copy-copy.jpg",
+    "bytes": 341471,
+    "sha256": "bb698223f89950f1cbf564820cb62f68ef6c701ddd0f6bf1475af72f19f3222d"
+  },
+  {
+    "path": "assets/years/2025/di-18-keener-rob-k-copy-copy.jpg",
+    "bytes": 279383,
+    "sha256": "295d8569782bc98c5a78594b0861d15c60e95a4cca6dadacf2ff26672ab04eb5"
+  },
+  {
+    "path": "assets/years/2025/di-18-kenneth-1-copy-copy.jpg",
+    "bytes": 1296779,
+    "sha256": "6e76f7dc98d46527dc71edd4fe32df0f51055f1bd7963911653d4a235406d2bb"
+  },
+  {
+    "path": "assets/years/2025/di-18-kenneth-2-copy-copy.jpg",
+    "bytes": 1232301,
+    "sha256": "e4bbdc4f1a69775978e702d7cfb8327d1115c60273ee36bbe5672e59cb8dd121"
+  },
+  {
+    "path": "assets/years/2025/di-18-kerry-wayne-copy-copy.jpg",
+    "bytes": 204819,
+    "sha256": "aaeae0f9d952ae15009efce08e58c46b0943214d73e0af610485f7569f7e7d19"
+  },
+  {
+    "path": "assets/years/2025/di-18-practice-rd-kerry-tee-shot.jpg",
+    "bytes": 1146489,
+    "sha256": "b49ff025eef684a84e5dcef2c68863be58f03b6da0145d911545d5aa1f037741"
+  },
+  {
+    "path": "assets/years/2025/di-18-winner-rob-knarr.jpg",
+    "bytes": 280283,
+    "sha256": "889134be3f10c865b9383a89eb416528f07cb8209f63d09fd434f914dff43774"
+  },
+  {
+    "path": "assets/years/2025/di-18-zak-rob-k.jpg",
+    "bytes": 328156,
+    "sha256": "630440ca356152d75cb630b1fec41c5be0419c0a97ba8aacc5f38e91a37f5283"
+  },
+  {
+    "path": "assets/years/2026/2026-logo.png",
+    "bytes": 14696,
+    "sha256": "77daba62f5b129933b6d0efb93453f5fe376d6a827a47c207258b1df0e541ef7"
+  },
+  {
+    "path": "assets/years/2026/2026-tournament-sheet.png",
+    "bytes": 2560910,
+    "sha256": "a30ec2ebaa6b8230c03ba5437e5e82815ea7e1910ae1897b7642b86b300e1fdc"
+  },
+  {
+    "path": "assets/years/2026/img-1430.jpeg",
+    "bytes": 1365743,
+    "sha256": "bf823b69b76787181c20f80285cbfc18ab8e4f190dd32d0a8bc4eac16e4ed5da"
+  },
+  {
+    "path": "assets/years/2026/img-1440.jpeg",
+    "bytes": 630928,
+    "sha256": "e71253bb277779941860a07da317d8ceb0cee104434e606ea74fb66ad181c6f3"
+  },
+  {
+    "path": "assets/years/2026/img-1445.jpeg",
+    "bytes": 728021,
+    "sha256": "4bb1948de83c2d958bd1a1b772b0527b76a963015aaa63843a32e1b8d9e9281b"
+  },
+  {
+    "path": "assets/years/2026/img-1450.jpeg",
+    "bytes": 1382758,
+    "sha256": "d1ee1ae99faa31805b1468edf7cf6c379a7d965f2e049d4170f989402ed671e4"
+  },
+  {
+    "path": "assets/years/2026/img-1453.jpeg",
+    "bytes": 1254798,
+    "sha256": "c096f2472712e30a2904e549adbc5a4b9ad56adcfe10639d4bf2ce4599dad57b"
+  },
+  {
+    "path": "assets/years/2026/img-1470.jpeg",
+    "bytes": 873024,
+    "sha256": "bd4f99e5c72ff2a09576fbf87cae9818f79864938efc36667162fdb7b3ca36fd"
+  },
+  {
+    "path": "assets/years/2026/img-1471.jpeg",
+    "bytes": 643873,
+    "sha256": "4e5ab8a57a2217230c4f3d3fc30b00448618746692ac18d71b235b50eac5347e"
+  },
+  {
+    "path": "assets/years/2026/img-1472.jpeg",
+    "bytes": 865544,
+    "sha256": "430046dffdf28c2dc46fee3ac31bf2b980131d04c413a22a7e86be9c0b17d295"
+  },
+  {
+    "path": "assets/years/2026/img-1474.jpeg",
+    "bytes": 708097,
+    "sha256": "59e09ce2e6acab289ec137ac13f1fd6c6f1cf13431689efabcecdb50aa300980"
+  },
+  {
+    "path": "assets/years/2026/img-1479.jpeg",
+    "bytes": 677745,
+    "sha256": "afa37556f4ac74a68a72a8ec125892d09ed0638c580dfce03e5e2ad62e3e5d51"
+  },
+  {
+    "path": "assets/years/2026/img-1482.jpeg",
+    "bytes": 719841,
+    "sha256": "0407ca39d23048d5f4359089c998886c02ad10a39c179f7bc733451153cc2d77"
+  },
+  {
+    "path": "assets/years/2026/img-1483.jpeg",
+    "bytes": 657894,
+    "sha256": "6043c5ca727eae8223f8e4f6a61bf83fc29418f79e64c7043f183576b6dc86bd"
+  },
+  {
+    "path": "assets/years/2026/img-1487.jpeg",
+    "bytes": 852971,
+    "sha256": "35e49748442ec86c9b41b8ebd1343b807b1763d85ed3279ddcecbaf6335483e7"
+  },
+  {
+    "path": "assets/years/2026/img-1490.jpeg",
+    "bytes": 820018,
+    "sha256": "6d1a74abd712d9c767ed416422572d01011bf68f79875785abbba2a98dc2eaaa"
+  },
+  {
+    "path": "assets/years/2026/img-1492.jpeg",
+    "bytes": 428412,
+    "sha256": "3a786496455548817c7bce45ac299e3721964bfe619d2bcfc7357297191f9678"
+  },
+  {
+    "path": "data.js",
+    "bytes": 16503,
+    "sha256": "bc8c5b06dddc8a9b32f6068c0614176052c4d46d7c19e91fe4c54cbde73512a0"
+  },
+  {
+    "path": "download",
+    "bytes": 412998,
+    "sha256": "ac1b8f66d2d52936dc248d244c17e5ad9d15c1cf7f1f16a863f787605992e669"
+  },
+  {
+    "path": "index.html",
+    "bytes": 19308,
+    "sha256": "333dc4a124a91a34b0b2b49ccd458ca623b1d1a83396f57765377ff03c0429d2"
+  },
+  {
+    "path": "robots.txt",
+    "bytes": 64,
+    "sha256": "beacd98f3d4f214564b354b8ddf169e92cef717e776efb7e5ce01e24618e0cec"
+  },
+  {
+    "path": "styles.css",
+    "bytes": 26892,
+    "sha256": "9930b7391d24270d8bfea4ff21da728558830c772af7b160f10c6d02d3352be0"
+  }
+]

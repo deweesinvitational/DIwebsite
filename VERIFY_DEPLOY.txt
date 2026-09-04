@@ -1,0 +1,18 @@
+DEWEES INVITATIONAL CLEAN DEPLOYMENT VERIFICATION
+
+Total files: 93
+Asset references checked: 79
+Missing referenced assets: 0
+Custom domain file: CNAME = deweesinvitational.com
+GitHub Pages helper: .nojekyll included
+
+4x rock swing reel: OK (14231499 bytes)
+2026 golf montage: OK (5572314 bytes)
+Rick 2026 replacement photo: OK (657894 bytes)
+2017 Achilles post-op photo: OK (726537 bytes)
+More than a tournament collage: OK (1964362 bytes)
+
+Three-Time Champion: OK
+Two-Time Champion: OK
+FUN FACT!: OK
+HE SNAPPED HIS ACHILLES!: OK
