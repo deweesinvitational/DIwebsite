@@ -43,24 +43,6 @@ const data = window.DEWEES_DATA;
 $$('[data-field="eventDate"]').forEach(el => el.textContent = data.event.date);
 $$('[data-field="eventLocation"]').forEach(el => el.textContent = data.event.location);
 
-// Countdown to DI XX — July 17, 2027 at 9:00 AM Eastern.
-const countdownTargets = [$('#event-countdown'), $('#header-countdown')].filter(Boolean);
-function renderCountdown() {
-  if (!countdownTargets.length) return;
-  const target = new Date(data.event.start).getTime();
-  const diff = Math.max(0, target - Date.now());
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
-  const minutes = Math.floor((diff % 3600000) / 60000);
-  const seconds = Math.floor((diff % 60000) / 1000);
-  const markup = [
-    ['Days', days], ['Hrs', hours], ['Min', minutes], ['Sec', seconds]
-  ].map(([label,value]) => `<span><b>${String(value).padStart(2,'0')}</b><small>${label}</small></span>`).join('');
-  countdownTargets.forEach(el => { el.innerHTML = markup; });
-}
-renderCountdown();
-setInterval(renderCountdown, 1000);
-
 // Simple year timeline: year only in the rail; click to reveal details and, when available, one small verified image.
 const rail = $('#year-rail');
 let selectedYear = data.years[0];
@@ -132,18 +114,23 @@ function selectYear(y, button) {
 }
 selectYear(data.years[0], $('.year-chip'));
 
-// Slow automatic movement keeps later years discoverable while preserving manual scrolling.
-if (rail) {
+// Locked behavior: year buttons continuously move left, pausing only during manual interaction.
+if (rail && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   let paused = false;
+  let resumeTimer;
+  const pauseBriefly = () => {
+    paused = true;
+    clearTimeout(resumeTimer);
+    resumeTimer = setTimeout(() => { paused = false; }, 1800);
+  };
   const moveYears = () => {
     if (!paused && rail.scrollWidth > rail.clientWidth) {
-      rail.scrollLeft += 0.35;
+      rail.scrollLeft += 0.55;
       if (rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 1) rail.scrollLeft = 0;
     }
     requestAnimationFrame(moveYears);
   };
-  ['mouseenter','touchstart','pointerdown','focusin'].forEach(evt => rail.addEventListener(evt, () => { paused = true; }, {passive:true}));
-  ['mouseleave','touchend','pointerup','focusout'].forEach(evt => rail.addEventListener(evt, () => { paused = false; }, {passive:true}));
+  ['wheel','touchstart','pointerdown','focusin'].forEach(evt => rail.addEventListener(evt, pauseBriefly, {passive:true}));
   requestAnimationFrame(moveYears);
 }
 
@@ -198,7 +185,7 @@ const winnerPhotos = {
   '2023': 'assets/years/2023/di-16th-winner-lee-d-copy-2.jpg',
   '2024': 'assets/years/2024/dixviikyle-trophy.jpg',
   '2025': 'assets/years/2025/di-18-winner-rob-knarr.jpg',
-  '2026': 'assets/years/2026/img-1483.jpeg'
+  '2026': 'assets/years/2026/img-1485-full.jpeg'
 };
 const championScroll = $('#champion-scroll');
 if (championScroll) {
@@ -231,10 +218,9 @@ if (championScroll) {
       }
       raf = requestAnimationFrame(tick);
     };
-    championScroll.addEventListener('mouseenter', () => paused = true);
-    championScroll.addEventListener('mouseleave', () => paused = false);
-    championScroll.addEventListener('focusin', () => paused = true);
-    championScroll.addEventListener('focusout', () => paused = false);
+    let resumeTimer;
+    const pauseBriefly = () => { paused = true; clearTimeout(resumeTimer); resumeTimer = setTimeout(() => paused = false, 1800); };
+    ['wheel','touchstart','pointerdown','focusin'].forEach(evt => championScroll.addEventListener(evt, pauseBriefly, {passive:true}));
     raf = requestAnimationFrame(tick);
   }
 }
@@ -255,4 +241,14 @@ if (funFactBtn && achillesDialog) {
     achillesDialog.querySelector('.postop-photo').hidden = false;
   });
   achillesDialog.addEventListener('click', (e) => { if (e.target === achillesDialog) achillesDialog.close(); });
+}
+
+// Swing reel: no poster still; quick fade into the first swing when playback begins.
+const swingReel = $('.swing-reel-video');
+if (swingReel) {
+  swingReel.addEventListener('play', () => {
+    swingReel.classList.remove('swing-fade-in');
+    void swingReel.offsetWidth;
+    swingReel.classList.add('swing-fade-in');
+  });
 }

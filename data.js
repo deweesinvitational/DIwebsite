@@ -1,7 +1,7 @@
 window.DEWEES_DATA = {
   "event": {
     "date": "July 17, 2027 · 9:00 AM",
-    "location": "Pennsylvania",
+    "location": "Lititz, PA",
     "start": "2027-07-17T09:00:00-04:00"
   },
   "years": [
@@ -194,7 +194,7 @@ window.DEWEES_DATA = {
       "year": 2017,
       "title": "The Twelfth Invitational",
       "tag": "Football Era",
-      "image": "assets/years/2017/12th-winner-pic.jpg",
+      "image": "assets/years/2017/2017-poker-table.jpg",
       "media": [
         "assets/years/2017/2017-logo.png",
         "assets/years/2017/12th-winner-pic.jpg",

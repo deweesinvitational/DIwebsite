@@ -471,3 +471,38 @@ footer{background:#090b0d}
   .nav-row nav a{padding:11px 0}
   .homepage-banner{min-height:220px;object-fit:cover}
 }
+\n\n/* ===== Locked single-change refinements · Sep 5 2026 ===== */
+/* Next Invitational: countdown removed; existing content centered without changing the surrounding format. */
+.event-strip{grid-template-columns:auto minmax(520px,760px) auto;justify-content:center;text-align:left;gap:40px}
+.event-strip-title{display:flex;flex-direction:column;align-items:flex-start}
+.event-facts{width:100%;margin-inline:auto}
+.event-facts div{padding:0 28px;border-left:1px solid var(--line)}
+.event-facts div:first-child{border-left:0}
+.event-facts strong{white-space:nowrap}
+.header-event{text-align:right}
+@media(max-width:1000px){.event-strip{grid-template-columns:1fr;justify-items:center;text-align:center}.event-strip-title{align-items:center}}
+@media(max-width:700px){.event-facts div{border-left:0}.event-facts strong{white-space:normal}}
+
+/* Requested one-line headings; preserve their existing typography. */
+#champions .section-title h2,#traditions .section-title h2,#di19 .section-title h2{white-space:nowrap;max-width:none}
+#champions .section-title,#traditions .section-title,#di19 .section-title{max-width:none}
+@media(max-width:900px){#champions .section-title h2,#traditions .section-title h2,#di19 .section-title h2{white-space:normal}}
+
+/* 2017: blinking red cross sits inside the top-right corner of the actual photograph. */
+.year-stage-media .fun-fact-btn{right:18px;top:18px;width:38px;height:38px;border:0;background:#c62828;color:#fff;box-shadow:0 2px 8px #0006;animation:redCrossBlink .9s ease-in-out infinite}
+.medical-cross:before,.medical-cross:after{background:#fff}
+@keyframes redCrossBlink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.94)}}
+
+/* Show the complete requested 2026 champion photograph instead of cropping it. */
+.di19-grid>img.show-whole-photo{object-fit:contain;background:#eee9df}
+
+/* Existing actual photos displayed upright where requested. */
+.era-card>img.upright-photo{object-fit:contain;background:#eee9df}
+
+/* Swing reel starts without a poster still and fades quickly into playback. */
+.swing-reel-video{background:#000}
+.swing-reel-video.swing-fade-in{animation:swingFadeIn .35s ease-out both}
+@keyframes swingFadeIn{from{opacity:.15}to{opacity:1}}
+
+/* Closing section: remove only the small logo overlay. */
+.closing-copy>img{display:none}
