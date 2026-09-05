@@ -112,7 +112,7 @@ function selectYear(y, button) {
 selectYear(data.years[0], $('.year-chip'));
 
 // Slow, seamless leftward year loop. A duplicated set makes the wrap visually continuous.
-if (rail && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+if (rail) {
   data.years.forEach(y => rail.appendChild(makeYearButton(y, true)));
   let paused = false;
   let resumeTimer;
@@ -204,7 +204,7 @@ if (championScroll) {
 
 
   // Keep the champion cards moving gently to the left. Duplicate the row for a seamless loop.
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  {
     const original = championScroll.innerHTML;
     championScroll.insertAdjacentHTML('beforeend', original.replaceAll('<article class="playing-card"', '<article class="playing-card clone" aria-hidden="true"'));
     let paused = false;
@@ -235,10 +235,13 @@ if (funFactBtn && achillesDialog) {
     e.currentTarget.hidden = true;
     achillesDialog.querySelector('.achilles-reveal').hidden = false;
   });
-  achillesDialog.querySelector('.postop-button')?.addEventListener('click', (e) => {
-    e.currentTarget.hidden = true;
-    achillesDialog.querySelector('.postop-photo').hidden = false;
+  achillesDialog.querySelector('.postop-button')?.addEventListener('click', () => {
+    const postopDialog = $('#postop-photo-dialog');
+    if (postopDialog) postopDialog.showModal();
   });
+  const postopDialog = $('#postop-photo-dialog');
+  postopDialog?.querySelector('.postop-close')?.addEventListener('click', () => postopDialog.close());
+  postopDialog?.addEventListener('click', (e) => { if (e.target === postopDialog) postopDialog.close(); });
   achillesDialog.addEventListener('click', (e) => { if (e.target === achillesDialog) achillesDialog.close(); });
 }
 
