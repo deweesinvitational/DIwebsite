@@ -82,12 +82,31 @@ function selectYear(y, button) {
   const wrap = $('#stage-media-wrap');
   const img = $('#stage-image');
   if (wrap && img) {
-    if (y.image) {
+    const existingCollage = wrap.querySelector('.timeline-two-photo');
+    if (existingCollage) existingCollage.remove();
+    if (y.timelineImages?.length === 2) {
+      wrap.hidden = false;
+      img.hidden = true;
+      img.removeAttribute('src');
+      const collage = document.createElement('div');
+      collage.className = 'timeline-two-photo';
+      y.timelineImages.forEach((src, i) => {
+        const photo = document.createElement('img');
+        photo.src = src;
+        photo.alt = `${y.annual} — ${y.title}`;
+        if (i === 0 && y.rotateFirst) photo.classList.add('rotate-left');
+        collage.appendChild(photo);
+      });
+      wrap.appendChild(collage);
+      $('#stage-tag').textContent = y.tag || '';
+      const funFact = $('#fun-fact-btn');
+      if (funFact) funFact.hidden = true;
+    } else if (y.image) {
       wrap.hidden = false;
       img.hidden = false;
       img.src = y.image;
       img.alt = `${y.annual} — ${y.title}`;
-      $('#stage-tag').textContent = y.tag;
+      $('#stage-tag').textContent = y.tag || '';
       const funFact = $('#fun-fact-btn');
       if (funFact) funFact.hidden = y.year !== 2017;
     } else {
@@ -101,10 +120,27 @@ function selectYear(y, button) {
   $('#stage-year').textContent = y.annual;
   $('#stage-title').textContent = y.title;
   $('#stage-description').textContent = y.description;
-  $('#stage-format').textContent = y.format;
-  $('#stage-champion').textContent = y.champion;
+  $('#stage-format').textContent = y.format || '';
+  $('#stage-champion').textContent = y.champion || '';
+  const details = $('#stage-format')?.closest('dl');
+  if (details) details.hidden = Boolean(y.hideDetails);
 }
 selectYear(data.years[0], $('.year-chip'));
+
+// Gently move the year strip to the left; pause while the visitor is using it.
+if (rail) {
+  let railPaused = false;
+  const tickRail = () => {
+    if (!railPaused && rail.scrollWidth > rail.clientWidth) {
+      rail.scrollLeft += 0.45;
+      if (rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 1) rail.scrollLeft = 0;
+    }
+    requestAnimationFrame(tickRail);
+  };
+  ['mouseenter','touchstart','pointerdown','focusin'].forEach(evt => rail.addEventListener(evt, () => { railPaused = true; }, {passive:true}));
+  ['mouseleave','touchend','pointerup','focusout'].forEach(evt => rail.addEventListener(evt, () => { railPaused = false; }, {passive:true}));
+  requestAnimationFrame(tickRail);
+}
 
 function openDialog(id) {
   const dlg = document.getElementById(id);
