@@ -116,16 +116,18 @@ if (rail) {
   data.years.forEach(y => rail.appendChild(makeYearButton(y, true)));
   let paused = false;
   let resumeTimer;
+  let lastStep = 0;
   const pauseBriefly = () => {
     paused = true;
     clearTimeout(resumeTimer);
-    resumeTimer = setTimeout(() => { paused = false; }, 1800);
+    resumeTimer = setTimeout(() => { paused = false; }, 1400);
   };
-  const moveYears = () => {
-    if (!paused && rail.scrollWidth > rail.clientWidth) {
-      rail.scrollLeft += 0.18;
+  const moveYears = (now) => {
+    if (!paused && rail.scrollWidth > rail.clientWidth && now - lastStep >= 34) {
+      rail.scrollLeft += 1;
       const half = rail.scrollWidth / 2;
       if (rail.scrollLeft >= half) rail.scrollLeft -= half;
+      lastStep = now;
     }
     requestAnimationFrame(moveYears);
   };
@@ -208,19 +210,20 @@ if (championScroll) {
     const original = championScroll.innerHTML;
     championScroll.insertAdjacentHTML('beforeend', original.replaceAll('<article class="playing-card"', '<article class="playing-card clone" aria-hidden="true"'));
     let paused = false;
-    let raf;
-    const tick = () => {
-      if (!paused) {
-        championScroll.scrollLeft += 0.22;
+    let resumeTimer;
+    let lastStep = 0;
+    const tick = (now) => {
+      if (!paused && championScroll.scrollWidth > championScroll.clientWidth && now - lastStep >= 38) {
+        championScroll.scrollLeft += 1;
         const half = championScroll.scrollWidth / 2;
         if (championScroll.scrollLeft >= half) championScroll.scrollLeft -= half;
+        lastStep = now;
       }
-      raf = requestAnimationFrame(tick);
+      requestAnimationFrame(tick);
     };
-    let resumeTimer;
-    const pauseBriefly = () => { paused = true; clearTimeout(resumeTimer); resumeTimer = setTimeout(() => paused = false, 1800); };
+    const pauseBriefly = () => { paused = true; clearTimeout(resumeTimer); resumeTimer = setTimeout(() => paused = false, 1400); };
     ['wheel','touchstart','pointerdown','focusin'].forEach(evt => championScroll.addEventListener(evt, pauseBriefly, {passive:true}));
-    raf = requestAnimationFrame(tick);
+    requestAnimationFrame(tick);
   }
 }
 
