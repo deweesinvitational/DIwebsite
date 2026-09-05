@@ -506,3 +506,28 @@ footer{background:#090b0d}
 
 /* Closing section: remove only the small logo overlay. */
 .closing-copy>img{display:none}
+
+/* ===== Requested corrections · Sep 5 2026, second pass ===== */
+/* Center the event headings directly over their values. */
+.event-facts div{text-align:center}
+.event-facts small{text-align:center}
+
+/* All timeline gold era/milestone tabs removed. */
+#stage-tag{display:none !important}
+
+/* Keep the 2017 cross above the photo and make sure it receives clicks. */
+.year-stage-media{position:relative}
+.year-stage-media .fun-fact-btn{left:auto !important;right:18px !important;top:18px !important;z-index:20;pointer-events:auto}
+
+/* The Annual Identity card uses the clean source logo; no graphic overlay. */
+#traditions .tradition-card:nth-child(3) img{object-fit:contain;background:#9ec5e8}
+
+/* DI14 reads horizontally in the Traditions section. */
+#traditions .tradition-card:nth-child(4) img{object-fit:contain;background:#eee9df}
+
+/* Show the full 2026 golf group photo, top to bottom, without cropping anyone. */
+.gallery-item.show-full-group img{object-fit:contain;background:#101923}
+.gallery-item.show-full-group:hover img{transform:none}
+
+/* Seamless duplicated year set keeps the same button appearance. */
+.year-chip-clone{flex:0 0 auto}

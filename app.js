@@ -46,21 +46,23 @@ $$('[data-field="eventLocation"]').forEach(el => el.textContent = data.event.loc
 // Simple year timeline: year only in the rail; click to reveal details and, when available, one small verified image.
 const rail = $('#year-rail');
 let selectedYear = data.years[0];
-if (rail) {
-  data.years.forEach((y, i) => {
-    const b = document.createElement('button');
-    b.className = 'year-chip' + (i === 0 ? ' active' : '');
-    b.textContent = y.year;
-    b.setAttribute('aria-label', `Show ${y.year} Invitational details`);
-    b.addEventListener('click', () => selectYear(y, b));
-    rail.appendChild(b);
-  });
+
+function makeYearButton(y, isClone = false) {
+  const b = document.createElement('button');
+  b.className = 'year-chip' + (y.year === selectedYear.year ? ' active' : '') + (isClone ? ' year-chip-clone' : '');
+  b.textContent = y.year;
+  b.dataset.year = y.year;
+  b.setAttribute('aria-label', `Show ${y.year} Invitational details`);
+  if (isClone) b.setAttribute('aria-hidden', 'true');
+  b.addEventListener('click', () => selectYear(y, b));
+  return b;
 }
+
+if (rail) data.years.forEach(y => rail.appendChild(makeYearButton(y)));
 
 function selectYear(y, button) {
   selectedYear = y;
-  $$('.year-chip').forEach(x => x.classList.remove('active'));
-  if (button) button.classList.add('active');
+  $$('.year-chip').forEach(x => x.classList.toggle('active', Number(x.dataset.year) === y.year));
 
   const wrap = $('#stage-media-wrap');
   const img = $('#stage-image');
@@ -72,7 +74,6 @@ function selectYear(y, button) {
       wrap.hidden = false;
       img.hidden = true;
       img.removeAttribute('src');
-
       const pair = document.createElement('div');
       pair.className = 'timeline-two-photo';
       y.timelineImages.forEach((src) => {
@@ -82,24 +83,21 @@ function selectYear(y, button) {
         pair.appendChild(photo);
       });
       wrap.appendChild(pair);
-      $('#stage-tag').textContent = y.tag || '';
-      const funFact = $('#fun-fact-btn');
-      if (funFact) funFact.hidden = true;
     } else if (y.image) {
       wrap.hidden = false;
       img.hidden = false;
       img.src = y.image;
       img.alt = `${y.annual} — ${y.title}`;
-      $('#stage-tag').textContent = y.tag || '';
-      const funFact = $('#fun-fact-btn');
-      if (funFact) funFact.hidden = y.year !== 2017;
     } else {
       wrap.hidden = true;
       img.hidden = true;
       img.removeAttribute('src');
-      const funFact = $('#fun-fact-btn');
-      if (funFact) funFact.hidden = true;
     }
+    // All gold timeline tabs are intentionally removed. The 2017 red cross remains independent.
+    const stageTag = $('#stage-tag');
+    if (stageTag) stageTag.hidden = true;
+    const funFact = $('#fun-fact-btn');
+    if (funFact) funFact.hidden = y.year !== 2017 || wrap.hidden;
   }
 
   $('#stage-year').textContent = y.annual;
@@ -108,14 +106,14 @@ function selectYear(y, button) {
   $('#stage-description').style.whiteSpace = y.description.includes('\n') ? 'pre-line' : '';
   $('#stage-format').textContent = y.format || '';
   $('#stage-champion').textContent = y.champion || '';
-
   const details = $('#stage-format')?.closest('dl');
   if (details) details.hidden = Boolean(y.hideDetails);
 }
 selectYear(data.years[0], $('.year-chip'));
 
-// Locked behavior: year buttons continuously move left, pausing only during manual interaction.
+// Slow, seamless leftward year loop. A duplicated set makes the wrap visually continuous.
 if (rail && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  data.years.forEach(y => rail.appendChild(makeYearButton(y, true)));
   let paused = false;
   let resumeTimer;
   const pauseBriefly = () => {
@@ -125,8 +123,9 @@ if (rail && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   };
   const moveYears = () => {
     if (!paused && rail.scrollWidth > rail.clientWidth) {
-      rail.scrollLeft += 0.55;
-      if (rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 1) rail.scrollLeft = 0;
+      rail.scrollLeft += 0.18;
+      const half = rail.scrollWidth / 2;
+      if (rail.scrollLeft >= half) rail.scrollLeft -= half;
     }
     requestAnimationFrame(moveYears);
   };
@@ -205,14 +204,14 @@ if (championScroll) {
 
 
   // Keep the champion cards moving gently to the left. Duplicate the row for a seamless loop.
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && championScroll.scrollWidth > championScroll.clientWidth) {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const original = championScroll.innerHTML;
     championScroll.insertAdjacentHTML('beforeend', original.replaceAll('<article class="playing-card"', '<article class="playing-card clone" aria-hidden="true"'));
     let paused = false;
     let raf;
     const tick = () => {
       if (!paused) {
-        championScroll.scrollLeft += 0.45;
+        championScroll.scrollLeft += 0.22;
         const half = championScroll.scrollWidth / 2;
         if (championScroll.scrollLeft >= half) championScroll.scrollLeft -= half;
       }
@@ -241,6 +240,24 @@ if (funFactBtn && achillesDialog) {
     achillesDialog.querySelector('.postop-photo').hidden = false;
   });
   achillesDialog.addEventListener('click', (e) => { if (e.target === achillesDialog) achillesDialog.close(); });
+}
+
+// Header countdown to DI XX.
+const headerCountdown = $('#header-countdown');
+if (headerCountdown) {
+  const target = new Date(data.event.start).getTime();
+  const renderCountdown = () => {
+    const remaining = Math.max(0, target - Date.now());
+    const days = Math.floor(remaining / 86400000);
+    const hours = Math.floor((remaining % 86400000) / 3600000);
+    const minutes = Math.floor((remaining % 3600000) / 60000);
+    const seconds = Math.floor((remaining % 60000) / 1000);
+    headerCountdown.innerHTML = [
+      ['Days', days], ['Hours', hours], ['Minutes', minutes], ['Seconds', seconds]
+    ].map(([label, value]) => `<span><b>${String(value).padStart(2,'0')}</b><small>${label}</small></span>`).join('');
+  };
+  renderCountdown();
+  setInterval(renderCountdown, 1000);
 }
 
 // Swing reel: no poster still; quick fade into the first swing when playback begins.
