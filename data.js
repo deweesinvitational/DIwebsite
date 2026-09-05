@@ -15,7 +15,7 @@ window.DEWEES_DATA = {
       "image": null,
       "media": [],
       "videos": [],
-      "description": "The DeWees Invitational began in 2006 as an annual event on the weekend of Thanksgiving. Years past, Kerry would play football with friends on Thanksgiving Day. Years later, his brother-in-law began hosting a formal-dress Black Friday poker tournament. Both of those things stopped at one point, and Kerry missed them both. Then the idea was born to combine them, with a lot of food included. That was the very beginning. One man. Two events. One idea for a new event. The DeWees Invitational was born. Football was the sport and poker was the game, but friends were the purpose.",
+      "description": "The DeWees Invitational began in 2006 as an annual event on Thanksgiving weekend. In years past, Kerry would play football with friends on Thanksgiving Day. Later, his brother-in-law began hosting a formal-dress poker tournament on Black Friday. Eventually, both traditions came to an end, and Kerry missed them. That sparked the idea of combining the best parts of both—with plenty of food included. That was the very beginning: one man, two events, and one idea for something new. The DeWees Invitational was born. Football was the sport and poker was the game, but friends were the purpose.",
       "format": "Cards + Gathering",
       "champion": "No formal poker champion",
       "videoCount": 0,
@@ -31,7 +31,7 @@ window.DEWEES_DATA = {
       "image": null,
       "media": [],
       "videos": [],
-      "description": "The first annual DeWees Invitational was a success, so it returned for its second annual event. Football, food and poker! This was shaping up to be something special.",
+      "description": "The first annual DeWees Invitational was a success, so it returned for a second year. Football, food and poker! This was shaping up to be something special.",
       "format": "Cards + Gathering",
       "champion": "No formal poker champion",
       "videoCount": 0,
@@ -49,7 +49,7 @@ window.DEWEES_DATA = {
       "videos": [],
       "description": "DI III introduced the first formal DeWees Invitational Texas Hold’em poker tournament. Football, food and a full poker tournament formed the structure that would define the Invitational for years. This year also brought the introduction of a yearly shirt. Everyone who participated received the first-ever official DeWees Invitational merch! We also celebrated our first poker champion, Mike Herman.",
       "format": "Football + Poker",
-      "champion": "Mike Herman · First DI poker champion",
+      "champion": "Mike Herman",
       "videoCount": 0
     },
     {
@@ -62,7 +62,7 @@ window.DEWEES_DATA = {
       "image": null,
       "media": [],
       "videos": [],
-      "description": "After our first poker champion was crowned, the title quickly became something everyone wanted. The competition was still fun, but now people wanted to win! Kerry DeWees became the next DI poker champion.",
+      "description": "After our first poker champion was crowned, the title quickly became something everyone wanted. The competition was still fun, but now people wanted to win! Kerry DeWees became the next DI poker champion, taking down the 2009 tournament.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
       "videoCount": 0
@@ -79,7 +79,7 @@ window.DEWEES_DATA = {
         "assets/years/2010/bracelet-year-invite-copy-copy-copy.jpg"
       ],
       "videos": [],
-      "description": "The fifth DI was here, and it was a special anniversary year. The T-shirts were upgraded to embroidered windbreakers! Inspired by the World Series of Poker champions winning bracelets, we deemed this the Bracelet Year and had a championship poker bracelet made for the winner. This year’s champion was Rick Stoll.",
+      "description": "The fifth DeWees Invitational had arrived, and it was a special anniversary year. The T-shirts were upgraded to embroidered windbreakers! Inspired by the World Series of Poker champions winning bracelets, we deemed this “The Bracelet Year” and had a championship poker bracelet made for the winner. This year’s champion was Rick Stoll.",
       "format": "Football + Poker",
       "champion": "Rick Stoll",
       "videoCount": 0
@@ -89,14 +89,14 @@ window.DEWEES_DATA = {
       "label": "6th",
       "annual": "6th Annual · 2011",
       "year": 2011,
-      "title": "A Surprise Champion",
+      "title": "The Football Years",
       "tag": "Football Era",
       "image": "assets/years/2011/2011-logo.png",
       "media": [
         "assets/years/2011/2011-logo.png"
       ],
       "videos": [],
-      "description": "This year brought a surprise poker winner. Bob DeWees, usually there just for the fun, had a late run of cards and took down the title.",
+      "description": "Football by day and poker by night remained the familiar rhythm of the Invitational. This year brought a surprise poker winner. Bob DeWees, usually there more for the fun than the competition, caught a late run of cards and took down the title.",
       "format": "Football + Poker",
       "champion": "Bob DeWees",
       "videoCount": 0
@@ -106,14 +106,14 @@ window.DEWEES_DATA = {
       "label": "7th",
       "annual": "7th Annual · 2012",
       "year": 2012,
-      "title": "The Group Keeps Growing",
+      "title": "A Growing Tradition",
       "tag": "Football Era",
-      "image": "assets/years/2012/2012-logo.png",
+      "image": "assets/years/2012/2012-logo-crop.png",
       "media": [
         "assets/years/2012/2012-logo.png"
       ],
       "videos": [],
-      "description": "The group was growing, with some new friends joining the Invitational. This year’s poker champion was Ryan Fischer, a new addition to the DI.",
+      "description": "The group continued to grow as new friends joined the Invitational. One of those new additions, Ryan Fischer, made his mark right away by taking down the poker tournament and becoming the 2012 DI champion.",
       "format": "Football + Poker",
       "champion": "Ryan Fischer",
       "videoCount": 0
@@ -123,14 +123,14 @@ window.DEWEES_DATA = {
       "label": "8th",
       "annual": "8th Annual · 2013",
       "year": 2013,
-      "title": "Kyle Takes the Title",
+      "title": "The Eighth Invitational",
       "tag": "Football Era",
       "image": "assets/years/2013/2013-logo.png",
       "media": [
         "assets/years/2013/2013-logo.png"
       ],
       "videos": [],
-      "description": "Kyle Radzinski had joined the DI just a couple of years earlier before taking down the poker title in 2013.",
+      "description": "Kyle Radzinski had been part of the DeWees Invitational for only a couple of years before making his mark at the poker table. In 2013, he took down the tournament and captured his first DI poker championship.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
       "videoCount": 0
@@ -140,12 +140,12 @@ window.DEWEES_DATA = {
       "label": "9th",
       "annual": "9th Annual · 2014",
       "year": 2014,
-      "title": "History Is Made",
+      "title": "The Ninth Invitational",
       "tag": "Football Era",
       "image": null,
       "media": [],
       "videos": [],
-      "description": "The DI had something it had never seen before: its first repeat poker champion. Kerry DeWees won his second title and became the first member of the two-time poker champion club.",
+      "description": "The DeWees Invitational made history in 2014 with something it had never seen before: its first repeat poker champion. Kerry DeWees took down the tournament for the second time, becoming the first player to win multiple DI poker championships.",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
       "videoCount": 0
@@ -155,14 +155,14 @@ window.DEWEES_DATA = {
       "label": "10th",
       "annual": "10th Annual · 2015",
       "year": 2015,
-      "title": "Dan Takes the Title",
+      "title": "Ten Years",
       "tag": "Anniversary",
       "image": "assets/years/2015/2015-logo.png",
       "media": [
         "assets/years/2015/2015-logo.png"
       ],
       "videos": [],
-      "description": "A later addition to the DI crew, Dan Cronin not only proved himself on the gridiron, but also took down a DI poker championship.",
+      "description": "A later addition to the DI crew, Dan Cronin proved himself not only on the gridiron, but at the poker table as well. In the 10th anniversary year, Dan took down the tournament and captured his first DeWees Invitational poker championship.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
       "videoCount": 0
@@ -172,9 +172,9 @@ window.DEWEES_DATA = {
       "label": "11th",
       "annual": "11th Annual · 2016",
       "year": 2016,
-      "title": "Kyle Joins the Club",
+      "title": "The Football Tradition",
       "tag": "Football Era",
-      "image": "assets/years/2016/11th-annual-shirt-copy-copy-copy.jpg",
+      "image": "assets/years/2016/poker-napkin.jpg",
       "media": [
         "assets/years/2016/11th-di-football-pic-2-copy-copy-copy.jpg",
         "assets/years/2016/11th-annual-shirt-copy-copy-copy.jpg",
@@ -182,7 +182,7 @@ window.DEWEES_DATA = {
         "assets/years/2016/11th-di-football-pic-3-copy-copy-copy.jpg"
       ],
       "videos": [],
-      "description": "Kyle Radzinski took down the title again and joined the two-time poker champion club.",
+      "description": "Kyle Radzinski took down the poker tournament once again in 2016, joining the two-time poker champion club.",
       "format": "Football + Poker",
       "champion": "Kyle Radzinski",
       "videoCount": 0
@@ -192,7 +192,7 @@ window.DEWEES_DATA = {
       "label": "12th",
       "annual": "12th Annual · 2017",
       "year": 2017,
-      "title": "History Is Made Again!",
+      "title": "The Twelfth Invitational",
       "tag": "Football Era",
       "image": "assets/years/2017/12th-winner-pic.jpg",
       "media": [
@@ -203,7 +203,7 @@ window.DEWEES_DATA = {
         "assets/years/2017/12th-annual-group-shot.jpg"
       ],
       "videos": [],
-      "description": "History was made again! Kerry DeWees became the first person in DeWees Invitational history to win three poker championships. This year also brought an unexpected twist when an injury occurred during the football game. Click the red cross for more information. (Kerry didn’t think this was too fun, though!)",
+      "description": "History is made again! Kerry becomes the first to win three poker championships. An injury during football also made this year memorable. Click the medical cross for more information. (Kerry didn’t think this was too fun, though.)",
       "format": "Football + Poker",
       "champion": "Kerry DeWees",
       "videoCount": 0
@@ -213,9 +213,9 @@ window.DEWEES_DATA = {
       "label": "13th",
       "annual": "13th Annual · 2018",
       "year": 2018,
-      "title": "Dan Joins the Two-Time Club",
+      "title": "First Flush",
       "tag": "Tradition",
-      "image": "assets/years/2018/13th-trophy.jpg",
+      "image": "assets/years/2018/di-13-ff-copy-copy-copy.jpg",
       "media": [
         "assets/years/2018/di13-2.jpg",
         "assets/years/2018/13th-trophy.jpg",
@@ -228,7 +228,7 @@ window.DEWEES_DATA = {
         "assets/years/2018/di13-5.jpg"
       ],
       "videos": [],
-      "description": "Dan Cronin joined the two-time poker champion club. This year also introduced the First Flush award, given to the first person eliminated from the poker tournament.",
+      "description": "Dan Cronin joined the two-time poker champion club in 2018. This year also introduced the First Flush award, given to the first person eliminated from the poker tournament.",
       "format": "Football + Poker",
       "champion": "Dan Cronin",
       "videoCount": 0
@@ -246,15 +246,14 @@ window.DEWEES_DATA = {
         "assets/years/2019/di-14-chips-copy-copy-copy.jpg"
       ],
       "videos": [],
-      "description": "Bobby Perrotti pulled out the win in 2019, proving you didn’t have to be an every-year competitor to take home a DeWees Invitational championship. Mike Triano earned a different kind of distinction, taking home the First Flush award as the first player eliminated from the tournament.",
+      "description": "Bobby Perrotti pulled out the win in 2019, proving you didn’t have to be an every-year competitor to take down a DeWees Invitational championship. Mike Triano earned a different distinction that year, taking home the First Flush award as the first player eliminated from the poker tournament.",
       "format": "Football + Poker",
       "champion": "Bobby Perrotti",
       "videoCount": 0,
       "timelineImages": [
-        "assets/years/2019/di-14-chips-copy-copy-copy.jpg",
-        "assets/years/2019/miketffdi14.jpg"
-      ],
-      "rotateFirst": true
+        "assets/years/2019/di-14-chips-rotated-left.jpg",
+        "assets/years/2019/mike-triano-first-flush.jpg"
+      ]
     },
     {
       "key": "2020",
@@ -266,7 +265,7 @@ window.DEWEES_DATA = {
       "image": null,
       "media": [],
       "videos": [],
-      "description": "The Rona kept us down, but not out. With injuries plaguing us in football and a worldwide pandemic, we waited until the coming summer and made golf the new sport of the DeWees Invitational.",
+      "description": "“The Rona” kept us down, but not out. With injuries beginning to take their toll during football and a worldwide pandemic putting the Invitational on pause, we waited until the following summer and made a change. Golf would become the new sport of the DeWees Invitational.",
       "format": "No event",
       "champion": "No champion",
       "videoCount": 0,
@@ -374,7 +373,7 @@ window.DEWEES_DATA = {
         "assets/years/2025/di-18-zak-rob-k.jpg"
       ],
       "videos": [],
-      "description": "With the Invitational now firmly established in Pennsylvania, new friends from the Lancaster area began joining the event. This year, one of the “new guys,” Rob Knarr, took down the poker tournament and became the newest DI poker champion. As a side note, during the practice round at Overlook Golf Course, Kerry came just two inches shy of a hole-in-one on No. 16—and it was his birthday. Would have been a nice birthday present!",
+      "description": "With the Invitational now firmly established in Pennsylvania, new friends from the Lancaster area began joining the event. This year, one of the “new guys,” Rob Knarr, took down the poker tournament and became the newest DI poker champion.\n\nAs a side note, during the practice round at Overlook Golf Course, Kerry came just two inches shy of a hole-in-one on No. 16—and it was his birthday. Would have been a nice birthday present!",
       "format": "Golf + Poker",
       "champion": "Rob Knarr",
       "videoCount": 0
@@ -410,7 +409,7 @@ window.DEWEES_DATA = {
       ],
       "description": "The 2026 DeWees Invitational featured the biggest poker tournament to date, with a great mix of local friends, New Jersey friends, and now friends traveling from quite a distance just to be part of it. Rick Stoll was down to almost no chips early in the poker tournament and found himself all-in with his tournament life on the line. He won that hand, turned things around, and was on his way to victory. Rick Stoll captured his second poker championship, 16 years after his first.",
       "format": "Golf + Poker",
-      "champion": "Rick Stoll · Two-Time Poker Champion",
+      "champion": "Rick Stoll — Two-Time Poker Champion",
       "videoCount": 15
     }
   ],

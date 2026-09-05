@@ -1,8 +1,8 @@
 
 :root{
-  --green:#0c352c; --green2:#12483b; --deep:#061e19; --gold:#c5a55f;
-  --cream:#f3efe6; --paper:#fbfaf7; --ink:#15201d; --muted:#69736f; --white:#fff;
-  --line:rgba(12,53,44,.16); --shadow:0 28px 80px rgba(4,31,24,.18);
+  --green:#0c1420; --green2:#162235; --deep:#090b0d; --gold:#c89b3c;
+  --cream:#f4f1e8; --paper:#f4f1e8; --ink:#101923; --muted:#707780; --white:#fff;
+  --line:rgba(12,20,32,.16); --shadow:0 28px 80px rgba(0,0,0,.20);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -339,12 +339,135 @@ footer p{color:#9eada8;font-size:.72rem}
 .champion-scroll .playing-card.clone{pointer-events:none}
 @media (max-width:720px){.intro-collage .tradition-badge{width:104px;height:104px;right:10px;bottom:10px}.intro-collage .tradition-badge strong{font-size:1.9rem}}
 
-/* Timeline refinements — year-by-year history update */
+
+/* Timeline refinements: only requested year-by-year changes */
 .year-stage-copy dl[hidden]{display:none}
-.year-stage-media .fun-fact-btn{left:auto;right:14px;top:14px;width:46px;height:46px;padding:0;border-radius:10px;background:#c62828;color:#fff;border:3px solid #fff;display:grid;place-items:center;font-size:1.65rem;line-height:1;animation:funBlink 1s steps(2,end) infinite}
+
+/* 2017 medical cross: top-right, compact, and intentionally subtle. */
+.year-stage-media .fun-fact-btn{
+  left:auto;right:12px;top:12px;
+  width:42px;height:42px;padding:0;
+  border-radius:50%;
+  border:2px solid #b42318;
+  background:#fff;
+  color:#b42318;
+  display:grid;place-items:center;
+  box-shadow:0 3px 10px rgba(0,0,0,.22);
+  animation:medicalPulse 1.6s ease-in-out infinite;
+}
 .year-stage-media .fun-fact-btn[hidden]{display:none}
-.year-stage-media .fun-fact-btn+span{top:14px}
-.timeline-two-photo{width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#ece9e0;padding:10px;overflow:hidden}
+.medical-cross{position:relative;width:22px;height:22px;display:block}
+.medical-cross:before,.medical-cross:after{
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  background:#c62828;border-radius:1px;
+}
+.medical-cross:before{width:22px;height:7px}
+.medical-cross:after{width:7px;height:22px}
+@keyframes medicalPulse{
+  0%,100%{box-shadow:0 3px 10px rgba(0,0,0,.22),0 0 0 0 rgba(198,40,40,.28)}
+  50%{box-shadow:0 3px 10px rgba(0,0,0,.22),0 0 0 7px rgba(198,40,40,0)}
+}
+
+/* 2019 timeline image pair */
+.timeline-two-photo{
+  width:100%;height:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:8px;
+  background:#ece9e0;padding:10px;overflow:hidden;
+}
 .timeline-two-photo img{width:100%;height:100%;object-fit:contain;background:#fff}
-.timeline-two-photo img.rotate-left{transform:rotate(-90deg);width:100%;height:100%;object-fit:contain}
-@media(max-width:720px){.timeline-two-photo{grid-template-columns:1fr 1fr;gap:5px;padding:6px}}
+@media(max-width:720px){
+  .timeline-two-photo{gap:5px;padding:6px}
+}
+
+
+/* ===== Approved 2027 homepage + charcoal/navy/gold palette ===== */
+body{padding-top:0}
+.topbar{
+  height:auto;min-height:0;display:block;padding:0;
+  background:#090b0d;color:#fff;position:relative;
+  box-shadow:none;
+}
+.topbar.scrolled{background:#090b0d;backdrop-filter:none;box-shadow:none}
+.masthead{
+  min-height:112px;display:flex;align-items:center;justify-content:space-between;
+  gap:30px;padding:16px 5vw;background:#090b0d;
+}
+.site-brand{
+  display:flex;align-items:center;gap:18px;color:#fff;text-decoration:none;
+  min-width:0;font-family:Inter,Arial,sans-serif;
+}
+.site-brand img{width:88px;height:78px;object-fit:contain;flex:0 0 auto}
+.brand-copy{display:flex;flex-direction:column;min-width:0}
+.brand-copy strong{
+  font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(2rem,4.2vw,4.35rem);
+  line-height:.88;letter-spacing:.01em;white-space:nowrap;
+}
+.brand-copy small{
+  margin-top:9px;color:#f4f1e8;font-size:.82rem;font-style:italic;letter-spacing:.06em;
+}
+.header-event{margin-left:auto;text-align:right;min-width:330px}
+.header-event>small{
+  display:block;color:#b8bdc3;text-transform:uppercase;letter-spacing:.18em;
+  font-size:.58rem;font-weight:700
+}
+.header-event>strong{
+  display:block;margin-top:4px;color:#c89b3c;text-transform:uppercase;
+  letter-spacing:.08em;font-size:.78rem
+}
+.header-countdown{justify-content:flex-end;margin-top:8px}
+.header-countdown span{
+  min-width:50px;background:transparent;border-top:0;padding:0 5px;color:#fff
+}
+.header-countdown b{font-size:1.45rem}
+.header-countdown small{color:#b8bdc3;font-size:.43rem}
+.nav-row{
+  min-height:48px;background:#0c1420;border-top:1px solid rgba(255,255,255,.06);
+  border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;padding:0 5vw
+}
+.nav-row nav{display:flex;gap:30px}
+.nav-row nav a{
+  color:#f4f1e8;text-decoration:none;text-transform:uppercase;letter-spacing:.13em;
+  font-size:.65rem;font-weight:700;position:relative;padding:16px 0
+}
+.nav-row nav a:after{content:"";position:absolute;left:0;right:100%;bottom:10px;height:1px;background:#c89b3c;transition:.25s}
+.nav-row nav a:hover:after{right:0}
+.home-collage{
+  height:auto;min-height:0;background:#090b0d;display:block;overflow:hidden;
+}
+.homepage-banner{display:block;width:100%;height:auto;max-height:520px;object-fit:cover}
+.homepage-welcome{
+  background:#101923;color:#f4f1e8;padding-top:78px;padding-bottom:88px;
+}
+.homepage-welcome .intro-copy{max-width:1050px;margin:0 auto}
+.homepage-welcome h2{color:#f4f1e8;font-size:clamp(3.4rem,6vw,6.5rem)}
+.homepage-welcome .large-copy{color:#f4f1e8}
+.homepage-welcome p:not(.large-copy){color:#c6cbd0}
+.homepage-welcome .text-link{color:#f4f1e8}
+.event-strip{background:#f4f1e8}
+.dark-section{background:#0c1420}
+.era-card{background:#101923}
+.timeline-section,.gallery-section,.current-year{background:#f4f1e8}
+.year-chip strong,.year-chip{color:#0c1420}
+.year-chip:hover,.year-chip.active{background:#0c1420}
+.year-stage-copy h3,.large-copy,.text-link,.text-button,.site-modal h2{color:#0c1420}
+.di19-copy,.video-feature{background:#0c1420}
+footer{background:#090b0d}
+
+/* Timeline stays manually scrollable while moving gently left on its own. */
+.year-rail{scroll-behavior:auto;overscroll-behavior-inline:contain}
+
+/* Mobile masthead */
+@media(max-width:900px){
+  .masthead{align-items:flex-start;flex-direction:column;padding:15px 20px 12px;gap:12px}
+  .site-brand img{width:70px;height:62px}
+  .brand-copy strong{white-space:normal;font-size:clamp(2.1rem,10vw,3.4rem)}
+  .header-event{margin:0;text-align:left;min-width:0;width:100%}
+  .header-countdown{justify-content:flex-start}
+  .nav-row{padding:0 20px;position:relative}
+  .nav-toggle{display:grid;gap:7px;border:0;background:transparent;padding:14px 0}
+  .nav-toggle span{display:block;width:28px;height:2px;background:white}
+  .nav-row nav{position:absolute;z-index:120;top:48px;left:0;right:0;background:#0c1420;padding:18px 20px 24px;display:none;flex-direction:column;gap:0}
+  .nav-row nav.open{display:flex}
+  .nav-row nav a{padding:11px 0}
+  .homepage-banner{min-height:220px;object-fit:cover}
+}

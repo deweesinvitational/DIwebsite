@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#092a24">
+  <meta name="theme-color" content="#090b0d">
   <meta name="description" content="The official home of The DeWees Invitational—an annual tradition of competition, friendship and unforgettable memories.">
   <meta property="og:title" content="The DeWees Invitational">
   <meta property="og:description" content="Celebrating an annual tradition that has grown and evolved over the years.">
@@ -22,39 +22,37 @@
   </div>
 
   <header class="topbar">
-    <a class="site-brand" href="#home"><span>The DeWees Invitational</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
-    <nav id="site-nav">
-      <a href="#event">This Year</a>
-      <a href="#story">The Story</a>
-      <a href="#timeline">History</a>
-      <a href="#champions">Champions</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#traditions">Traditions</a>
-    </nav>
+    <div class="masthead">
+      <a class="site-brand" href="#home">
+        <img src="assets/logo.png" alt="DeWees Invitational logo">
+        <span class="brand-copy">
+          <strong>DEWEES INVITATIONAL</strong>
+          <small>20+ Years of Tradition</small>
+        </span>
+      </a>
+      <div class="header-event" aria-label="Next DeWees Invitational">
+        <small>NEXT EVENT</small>
+        <strong>JULY 17, 2027 · 9:00 AM</strong>
+        <div class="countdown header-countdown" id="header-countdown"></div>
+      </div>
+    </div>
+    <div class="nav-row">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav id="site-nav">
+        <a href="#home">Home</a>
+        <a href="#event">This Year</a>
+        <a href="#story">The Story</a>
+        <a href="#timeline">History</a>
+        <a href="#champions">Champions</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#traditions">Traditions</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-slides" aria-hidden="true">
-        <img class="active" src="assets/homepage/01-dixvii-group.jpg" alt="">
-        <img src="assets/homepage/02-dixvii-trophy.jpg" alt="">
-        <img src="assets/homepage/03-wayne.jpg" alt="">
-        <img src="assets/homepage/04-di-xii-group.jpg" alt="">
-        <img src="assets/homepage/05-di-xviii-group.jpg" alt="">
-      </div>
-      <div class="hero-vignette"></div>
-      <div class="hero-inner">
-        <p class="overline">Since 2006 · Golf · Poker · Tradition</p>
-        <h1>The DeWees Invitational</h1>
-        <p class="hero-tagline">The games evolved. <em>The tradition endured.</em></p>
-        <p class="hero-copy">A celebration of competition, friendship, old stories, new memories, and the one event that keeps bringing everyone back.</p>
-        <div class="hero-actions">
-          <a class="button gold" href="#event">This Year’s Invitational</a>
-          <a class="button ghost" href="#timeline">Explore the History</a>
-        </div>
-      </div>
-      <a class="scroll-cue" href="#event"><span>Scroll</span><i></i></a>
+    <section class="hero home-collage" id="home">
+      <img class="homepage-banner" src="assets/homepage-five-photo-banner.jpg" alt="DeWees Invitational memories from football, poker and golf">
     </section>
 
     <section class="event-strip reveal" id="event">
@@ -71,17 +69,13 @@
       <button class="button dark" data-open="event-modal">View Event Details</button>
     </section>
 
-    <section class="intro-grid section">
+    <section class="homepage-welcome section">
       <div class="intro-copy reveal">
-        <span class="eyebrow">The Invitational</span>
+        <span class="eyebrow gold-text">The Invitational</span>
         <h2>More than a tournament.</h2>
         <p class="large-copy">The DeWees Invitational has never been defined by one game. It has grown from cards, to football and poker, to golf and poker—changing with the years while preserving the reason it began.</p>
         <p>The heart of the Invitational is the annual gathering itself: a group of friends, genuine competition, plenty of laughter, and stories that become part of the next year’s event.</p>
         <a class="text-link" href="#story">Read the story <span>→</span></a>
-      </div>
-      <div class="image-stack reveal intro-collage">
-        <figure class="stack-main"><img src="assets/more-than-collage.png" alt="DeWees Invitational memories collage"></figure>
-        <div class="stack-badge tradition-badge"><strong>20+</strong><span>Years of Tradition</span></div>
       </div>
     </section>
 
@@ -133,7 +127,7 @@
         <div class="year-stage-media compact" id="stage-media-wrap" hidden>
           <img id="stage-image" src="" alt="" hidden>
           <span id="stage-tag">Founding Year</span>
-          <button class="fun-fact-btn" id="fun-fact-btn" type="button" aria-label="Medical injury information" title="Medical injury information" hidden><span aria-hidden="true">✚</span></button>
+          <button class="fun-fact-btn" id="fun-fact-btn" type="button" aria-label="Achilles injury information" title="Achilles injury information" hidden><span class="medical-cross" aria-hidden="true"></span></button>
         </div>
         <div class="year-stage-copy">
           <span id="stage-year">1st Annual · 2006</span>

@@ -44,18 +44,19 @@ $$('[data-field="eventDate"]').forEach(el => el.textContent = data.event.date);
 $$('[data-field="eventLocation"]').forEach(el => el.textContent = data.event.location);
 
 // Countdown to DI XX — July 17, 2027 at 9:00 AM Eastern.
-const countdown = $('#event-countdown');
+const countdownTargets = [$('#event-countdown'), $('#header-countdown')].filter(Boolean);
 function renderCountdown() {
-  if (!countdown) return;
+  if (!countdownTargets.length) return;
   const target = new Date(data.event.start).getTime();
   const diff = Math.max(0, target - Date.now());
   const days = Math.floor(diff / 86400000);
   const hours = Math.floor((diff % 86400000) / 3600000);
   const minutes = Math.floor((diff % 3600000) / 60000);
   const seconds = Math.floor((diff % 60000) / 1000);
-  countdown.innerHTML = [
+  const markup = [
     ['Days', days], ['Hrs', hours], ['Min', minutes], ['Sec', seconds]
   ].map(([label,value]) => `<span><b>${String(value).padStart(2,'0')}</b><small>${label}</small></span>`).join('');
+  countdownTargets.forEach(el => { el.innerHTML = markup; });
 }
 renderCountdown();
 setInterval(renderCountdown, 1000);
@@ -82,22 +83,23 @@ function selectYear(y, button) {
   const wrap = $('#stage-media-wrap');
   const img = $('#stage-image');
   if (wrap && img) {
-    const existingCollage = wrap.querySelector('.timeline-two-photo');
-    if (existingCollage) existingCollage.remove();
-    if (y.timelineImages?.length === 2) {
+    const oldPair = wrap.querySelector('.timeline-two-photo');
+    if (oldPair) oldPair.remove();
+
+    if (Array.isArray(y.timelineImages) && y.timelineImages.length === 2) {
       wrap.hidden = false;
       img.hidden = true;
       img.removeAttribute('src');
-      const collage = document.createElement('div');
-      collage.className = 'timeline-two-photo';
-      y.timelineImages.forEach((src, i) => {
+
+      const pair = document.createElement('div');
+      pair.className = 'timeline-two-photo';
+      y.timelineImages.forEach((src) => {
         const photo = document.createElement('img');
         photo.src = src;
         photo.alt = `${y.annual} — ${y.title}`;
-        if (i === 0 && y.rotateFirst) photo.classList.add('rotate-left');
-        collage.appendChild(photo);
+        pair.appendChild(photo);
       });
-      wrap.appendChild(collage);
+      wrap.appendChild(pair);
       $('#stage-tag').textContent = y.tag || '';
       const funFact = $('#fun-fact-btn');
       if (funFact) funFact.hidden = true;
@@ -117,29 +119,32 @@ function selectYear(y, button) {
       if (funFact) funFact.hidden = true;
     }
   }
+
   $('#stage-year').textContent = y.annual;
   $('#stage-title').textContent = y.title;
   $('#stage-description').textContent = y.description;
+  $('#stage-description').style.whiteSpace = y.description.includes('\n') ? 'pre-line' : '';
   $('#stage-format').textContent = y.format || '';
   $('#stage-champion').textContent = y.champion || '';
+
   const details = $('#stage-format')?.closest('dl');
   if (details) details.hidden = Boolean(y.hideDetails);
 }
 selectYear(data.years[0], $('.year-chip'));
 
-// Gently move the year strip to the left; pause while the visitor is using it.
+// Slow automatic movement keeps later years discoverable while preserving manual scrolling.
 if (rail) {
-  let railPaused = false;
-  const tickRail = () => {
-    if (!railPaused && rail.scrollWidth > rail.clientWidth) {
-      rail.scrollLeft += 0.45;
+  let paused = false;
+  const moveYears = () => {
+    if (!paused && rail.scrollWidth > rail.clientWidth) {
+      rail.scrollLeft += 0.35;
       if (rail.scrollLeft >= rail.scrollWidth - rail.clientWidth - 1) rail.scrollLeft = 0;
     }
-    requestAnimationFrame(tickRail);
+    requestAnimationFrame(moveYears);
   };
-  ['mouseenter','touchstart','pointerdown','focusin'].forEach(evt => rail.addEventListener(evt, () => { railPaused = true; }, {passive:true}));
-  ['mouseleave','touchend','pointerup','focusout'].forEach(evt => rail.addEventListener(evt, () => { railPaused = false; }, {passive:true}));
-  requestAnimationFrame(tickRail);
+  ['mouseenter','touchstart','pointerdown','focusin'].forEach(evt => rail.addEventListener(evt, () => { paused = true; }, {passive:true}));
+  ['mouseleave','touchend','pointerup','focusout'].forEach(evt => rail.addEventListener(evt, () => { paused = false; }, {passive:true}));
+  requestAnimationFrame(moveYears);
 }
 
 function openDialog(id) {
