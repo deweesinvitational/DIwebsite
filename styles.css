@@ -698,3 +698,16 @@ footer{background:#090b0d}
   box-shadow:0 0 10px rgba(230,197,111,.52),0 0 20px rgba(200,155,60,.28);
 }
 @media(max-width:900px){.memory-header-button{margin-right:12px}}
+
+/* Round 13 locked change only: make Share a Memory visibly brighter and shift left */
+.memory-header-button{
+  transform:translateX(-38px);
+  background:#e2b84f;
+  border-color:#f1d27c;
+  box-shadow:0 0 10px rgba(241,210,124,.58),0 0 22px rgba(226,184,79,.34);
+}
+.memory-header-button:hover{
+  background:#ebc55e;
+  box-shadow:0 0 12px rgba(241,210,124,.68),0 0 26px rgba(226,184,79,.40);
+}
+@media(max-width:900px){.memory-header-button{transform:translateX(-14px)}}
