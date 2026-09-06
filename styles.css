@@ -592,3 +592,22 @@ footer{background:#090b0d}
 .gallery-item.golf-wide-fill{background:transparent}
 .gallery-item.golf-wide-fill img{width:100%;height:100%;object-fit:cover;object-position:center center;background:transparent}
 .gallery-item.golf-wide-fill:hover img{transform:scale(1.03)}
+
+/* Round 5: preserve the complete 2019 chips and 2026 golf photos in the gallery. */
+.gallery-item.chips-fill,
+.gallery-item.golf-wide-fill{
+  grid-row:span 2;
+  background:transparent;
+}
+.gallery-item.chips-fill img,
+.gallery-item.golf-wide-fill img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+  background:transparent;
+}
+.gallery-item.chips-fill:hover img,
+.gallery-item.golf-wide-fill:hover img{
+  transform:none;
+}
