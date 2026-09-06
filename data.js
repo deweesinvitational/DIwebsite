@@ -240,7 +240,7 @@ window.DEWEES_DATA = {
       "year": 2019,
       "title": "The Final Football Chapter",
       "tag": "Transition",
-      "image": "assets/years/2019/2019-final-football-chapter.png",
+      "image": "assets/years/2019/2019-final-football-chapter-actual.jpg",
       "media": [
         "assets/years/2019/miketffdi14.jpg",
         "assets/years/2019/di-14-chips-copy-copy-copy.jpg"
@@ -250,10 +250,7 @@ window.DEWEES_DATA = {
       "format": "Football + Poker",
       "champion": "Bobby Perrotti",
       "videoCount": 0,
-      "timelineImages": [
-        "assets/years/2019/di-14-chips-rotated-left.jpg",
-        "assets/years/2019/mike-triano-first-flush.jpg"
-      ]
+      "timelineImages": []
     },
     {
       "key": "2020",

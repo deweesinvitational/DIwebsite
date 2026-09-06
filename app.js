@@ -275,3 +275,137 @@ if (swingReel) {
     swingReel.classList.add('swing-fade-in');
   });
 }
+
+// Memories From the Invitational — text-only moderated guestbook.
+// The publishable Supabase key is safe for browser use; Row Level Security controls access.
+const MEMORIES_SUPABASE_URL = 'https://pmtuhuktxvtehsgxroqg.supabase.co';
+const MEMORIES_SUPABASE_KEY = 'sb_publishable_KLodHn8AM8z2T-EuYXyb-A_Tfxsmyd6';
+const MEMORIES_ACCESS_CODE = 'kerry719';
+const MEMORIES_TABLE = 'Memories';
+
+const memoriesList = $('#memory-list');
+const memoryForm = $('#memory-form');
+const memoryStatus = $('#memory-form-status');
+const memorySubmit = $('#memory-submit');
+
+function memoriesHeaders(extra = {}) {
+  return {
+    'apikey': MEMORIES_SUPABASE_KEY,
+    'Authorization': `Bearer ${MEMORIES_SUPABASE_KEY}`,
+    ...extra
+  };
+}
+
+function createMemoryCard(row) {
+  const article = document.createElement('article');
+  article.className = 'memory-card';
+
+  const meta = document.createElement('div');
+  meta.className = 'memory-card-meta';
+
+  const name = document.createElement('strong');
+  name.textContent = row.name || 'Anonymous';
+  meta.appendChild(name);
+
+  if (row.year) {
+    const year = document.createElement('span');
+    year.textContent = row.year;
+    meta.appendChild(year);
+  }
+
+  const quote = document.createElement('p');
+  quote.textContent = row.memory || '';
+
+  article.append(meta, quote);
+  return article;
+}
+
+async function loadApprovedMemories() {
+  if (!memoriesList) return;
+  try {
+    const endpoint = `${MEMORIES_SUPABASE_URL}/rest/v1/${encodeURIComponent(MEMORIES_TABLE)}?select=name,year,memory,created_at&approved=eq.true&order=created_at.desc`;
+    const response = await fetch(endpoint, { headers: memoriesHeaders() });
+    if (!response.ok) throw new Error(`Supabase returned ${response.status}`);
+    const rows = await response.json();
+    memoriesList.replaceChildren();
+    if (!Array.isArray(rows) || rows.length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'memory-empty';
+      empty.textContent = 'Be the first to share a memory.';
+      memoriesList.appendChild(empty);
+      return;
+    }
+    rows.forEach(row => memoriesList.appendChild(createMemoryCard(row)));
+  } catch (error) {
+    console.error('Unable to load approved memories:', error);
+    memoriesList.replaceChildren();
+    const unavailable = document.createElement('p');
+    unavailable.className = 'memory-empty';
+    unavailable.textContent = 'Memories are temporarily unavailable.';
+    memoriesList.appendChild(unavailable);
+  }
+}
+
+if (memoryForm) {
+  memoryForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const name = $('#memory-name')?.value.trim() || '';
+    const year = $('#memory-year')?.value.trim() || '';
+    const memory = $('#memory-text')?.value.trim() || '';
+    const code = $('#memory-code')?.value || '';
+
+    if (code !== MEMORIES_ACCESS_CODE) {
+      memoryStatus.textContent = 'That access code is not correct.';
+      memoryStatus.className = 'memory-form-status error';
+      $('#memory-code')?.focus();
+      return;
+    }
+
+    if (!name || !memory) {
+      memoryStatus.textContent = 'Please enter your name and memory.';
+      memoryStatus.className = 'memory-form-status error';
+      return;
+    }
+
+    memorySubmit.disabled = true;
+    memorySubmit.textContent = 'Submitting…';
+    memoryStatus.textContent = '';
+    memoryStatus.className = 'memory-form-status';
+
+    try {
+      const response = await fetch(`${MEMORIES_SUPABASE_URL}/rest/v1/${encodeURIComponent(MEMORIES_TABLE)}`, {
+        method: 'POST',
+        headers: memoriesHeaders({
+          'Content-Type': 'application/json',
+          'Prefer': 'return=minimal'
+        }),
+        body: JSON.stringify({
+          name,
+          year: year || null,
+          memory,
+          media_url: null,
+          media_type: null,
+          approved: false
+        })
+      });
+
+      if (!response.ok) {
+        const details = await response.text();
+        throw new Error(`Supabase returned ${response.status}: ${details}`);
+      }
+
+      memoryForm.reset();
+      memoryStatus.textContent = 'Thanks — your memory was submitted and will appear after Kerry approves it.';
+      memoryStatus.className = 'memory-form-status success';
+    } catch (error) {
+      console.error('Unable to submit memory:', error);
+      memoryStatus.textContent = 'The memory could not be submitted. Please try again.';
+      memoryStatus.className = 'memory-form-status error';
+    } finally {
+      memorySubmit.disabled = false;
+      memorySubmit.textContent = 'Submit Memory';
+    }
+  });
+}
+
+loadApprovedMemories();

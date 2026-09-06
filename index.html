@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=round6">
+  <link rel="stylesheet" href="styles.css?v=round10">
 </head>
 <body>
   <div class="page-loader" aria-hidden="true">
@@ -240,6 +240,21 @@
       </div>
     </section>
 
+
+    <section class="memories-section section dark-section" id="memories">
+      <div class="memories-shell reveal">
+        <div class="memories-heading">
+          <span class="eyebrow gold-text">From the guys who were there</span>
+          <h2>Memories From the Invitational</h2>
+          <p>Stories, moments and comments from the people who helped make the Invitational what it is.</p>
+          <button class="button gold" type="button" data-open="memory-modal">Share a Memory</button>
+        </div>
+        <div class="memory-list" id="memory-list" aria-live="polite">
+          <p class="memory-empty">Approved memories will appear here.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="closing">
       <img src="assets/years/2025/di-18-group-shot-copy-copy.jpg" alt="">
       <div class="closing-shade"></div>
@@ -273,6 +288,36 @@
     </div>
   </dialog>
 
+
+  <dialog id="memory-modal" class="site-modal memory-modal">
+    <button class="modal-close" aria-label="Close">×</button>
+    <span class="eyebrow gold-text">DeWees Invitational</span>
+    <h2>Share a Memory</h2>
+    <p class="memory-modal-intro">Add a story, comment or favorite moment. Submissions are reviewed before they appear on the site.</p>
+    <form id="memory-form" class="memory-form">
+      <label>
+        <span>Your Name</span>
+        <input id="memory-name" name="name" type="text" maxlength="80" autocomplete="name" required>
+      </label>
+      <label>
+        <span>Year / Invitational <small>(optional)</small></span>
+        <input id="memory-year" name="year" type="text" maxlength="40" placeholder="Example: 2019 · DI XIV">
+      </label>
+      <label class="memory-form-wide">
+        <span>Memory / Comment</span>
+        <textarea id="memory-text" name="memory" rows="7" maxlength="2000" required></textarea>
+      </label>
+      <label class="memory-form-wide">
+        <span>DI Access Code</span>
+        <input id="memory-code" name="access_code" type="password" maxlength="40" autocomplete="off" required>
+      </label>
+      <p class="memory-form-status" id="memory-form-status" role="status" aria-live="polite"></p>
+      <div class="memory-form-actions memory-form-wide">
+        <button class="button gold" id="memory-submit" type="submit">Submit Memory</button>
+      </div>
+    </form>
+  </dialog>
+
   <dialog id="lightbox" class="lightbox">
     <button class="modal-close" aria-label="Close">×</button>
     <img src="" alt="">
@@ -297,6 +342,6 @@
   </dialog>
 
   <script src="data.js?v=round4"></script>
-  <script src="app.js?v=round6"></script>
+  <script src="app.js?v=round10"></script>
 </body>
 </html>
