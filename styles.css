@@ -684,3 +684,17 @@ footer{background:#090b0d}
   .memory-header-copy small{font-size:.39rem}
 }
 @media(max-width:430px){.memory-header-copy small{display:none}}
+
+/* Round 12 locked changes only: memory button position/glow + DI XIV full-image display */
+.memory-header-button{
+  margin-left:auto;
+  margin-right:24px;
+  background:#d6a93f;
+  border-color:#e6c56f;
+  box-shadow:0 0 8px rgba(230,197,111,.42),0 0 16px rgba(200,155,60,.22);
+}
+.memory-header-button:hover{
+  background:#dfb54f;
+  box-shadow:0 0 10px rgba(230,197,111,.52),0 0 20px rgba(200,155,60,.28);
+}
+@media(max-width:900px){.memory-header-button{margin-right:12px}}
