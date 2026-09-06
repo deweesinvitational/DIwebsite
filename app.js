@@ -172,7 +172,7 @@ $('#copyright-year').textContent = new Date().getFullYear();
 
 const repeatChampions = $('#repeat-champions');
 if (repeatChampions && data.repeatChampions) {
-  repeatChampions.innerHTML = data.repeatChampions.map(c => `<article class="repeat-champion"><b>${c.titles === 3 ? 'Three-Time Champion' : 'Two-Time Champion'}</b><strong>${c.name}</strong><small>${c.years}</small></article>`).join('');
+  repeatChampions.innerHTML = data.repeatChampions.map(c => `<article class="repeat-champion"><b>${c.titles === 3 ? 'Three-Time<br>Poker Champion' : 'Two-Time<br>Poker Champion'}</b><strong>${c.name}</strong><small>${c.years}</small></article>`).join('');
 }
 
 const golfChampions = $('#golf-champions');

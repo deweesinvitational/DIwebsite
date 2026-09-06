@@ -611,3 +611,12 @@ footer{background:#090b0d}
 .gallery-item.golf-wide-fill:hover img{
   transform:none;
 }
+
+/* Round 6 approved changes */
+.home-origin-story{margin:28px 0 22px}
+.home-origin-story h3{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,3vw,3rem);margin:0 0 14px}
+.repeat-champion{text-align:center}
+.repeat-champion b{display:block;text-align:center;line-height:1.05}
+.repeat-champion strong,.repeat-champion small{display:block;text-align:center}
+.modal-multiline{display:block;text-align:left;line-height:1.45}
+.tee-shot-caption{line-height:1.35}

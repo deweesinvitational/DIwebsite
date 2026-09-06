@@ -108,7 +108,7 @@ window.DEWEES_DATA = {
       "year": 2012,
       "title": "A Growing Tradition",
       "tag": "Football Era",
-      "image": "assets/years/2012/2012-logo-crop.png",
+      "image": "assets/years/2012/2012-logo-clean.png",
       "media": [
         "assets/years/2012/2012-logo.png"
       ],
@@ -240,7 +240,7 @@ window.DEWEES_DATA = {
       "year": 2019,
       "title": "The Final Football Chapter",
       "tag": "Transition",
-      "image": "assets/years/2019/di-14-chips-copy-copy-copy.jpg",
+      "image": "assets/years/2019/2019-final-football-chapter.png",
       "media": [
         "assets/years/2019/miketffdi14.jpg",
         "assets/years/2019/di-14-chips-copy-copy-copy.jpg"
