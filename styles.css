@@ -620,3 +620,13 @@ footer{background:#090b0d}
 .repeat-champion strong,.repeat-champion small{display:block;text-align:center}
 .modal-multiline{display:block;text-align:left;line-height:1.45}
 .tee-shot-caption{line-height:1.35}
+
+
+/* Round 7 approved changes */
+.modal-grid>div:has(small:first-child){min-width:0}
+.modal-grid>div:last-child{grid-column:1 / -1}
+.modal-grid>div:last-child strong{white-space:nowrap}
+.video-features .video-copy{min-height:128px;display:flex;flex-direction:column;justify-content:flex-start}
+.video-features .video-copy .eyebrow{display:block;margin:0 0 8px}
+.video-features .video-copy h3{margin:0}
+.repeat-champion b{min-height:2.1em;display:flex;flex-direction:column;align-items:center;justify-content:center}
